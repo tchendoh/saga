@@ -11,6 +11,8 @@ const series: Series = {
     { id: "two", title: "Two" },
   ],
   colors: [{ id: "red", name: "Red", hex: "#e5534b" }],
+  houses: [],
+  allegiances: [],
 };
 
 const valid = {

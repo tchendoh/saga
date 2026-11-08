@@ -11,6 +11,8 @@ const series: Series = {
     { id: "two", title: { en: "Two", fr: "Deux" } },
   ],
   colors: [],
+  houses: [],
+  allegiances: [],
 };
 
 describe("inEdition", () => {

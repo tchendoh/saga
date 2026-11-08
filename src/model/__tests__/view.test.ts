@@ -14,6 +14,8 @@ const series: Series = {
     { id: "red", name: { en: "Red", fr: "Rouge" }, hex: "#e5534b", particle: { en: "of", fr: "de" } },
     { id: "gold", name: { en: "Gold", fr: "Or" }, hex: "#d4a72c" },
   ],
+  houses: [],
+  allegiances: [],
 };
 
 const hero = Character.parse({

@@ -12,6 +12,8 @@ const series: Series = {
     { id: "three", title: "Three" },
   ],
   colors: [],
+  houses: [],
+  allegiances: [],
 };
 
 describe("effectivePosition", () => {
