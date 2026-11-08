@@ -1,5 +1,9 @@
 import type { SpoilerLevel } from "./model/position";
-import type { Edition, Language, Role } from "./model/schema";
+import type { Edition, Gender, Language, RelationType, Role } from "./model/schema";
+import type { GroupBy } from "./model/view";
+
+type Gendered = { f: string; m: string; any: string };
+const pick = (labels: Gendered, gender?: Gender) => (gender ? labels[gender] : labels.any);
 
 const fr = {
   tagline: (book: number, title: string) => `Tome ${book}, ${title} : seulement ce que vous savez déjà.`,
@@ -26,6 +30,26 @@ const fr = {
   editions: { en: "Anglaise (originale)", fr: "Française" } as Record<Edition, string>,
   storageNote: "Vos réglages sont enregistrés seulement dans ce navigateur.",
   reset: "Réinitialiser les réglages",
+  house: "Maison",
+  allegiance: "Allégeance",
+  title: "Titre",
+  introducedIn: "Introduit dans",
+  newInBook: "Nouveau dans ce tome",
+  groupBy: "Regrouper",
+  groups: { name: "Par nom", house: "Par maison", allegiance: "Par allégeance" } as Record<GroupBy, string>,
+  otherGroup: "Autres",
+  relation: (type: RelationType, gender?: Gender) =>
+    pick(
+      ({
+        spouse: { f: "Épouse", m: "Époux", any: "Conjoint" },
+        parent: { f: "Mère", m: "Père", any: "Parent" },
+        child: { f: "Fille", m: "Fils", any: "Enfant" },
+        sibling: { f: "Sœur", m: "Frère", any: "Fratrie" },
+        mentor: { f: "Mentore", m: "Mentor", any: "Mentor" },
+        student: { f: "Élève", m: "Élève", any: "Élève" },
+      } as Record<RelationType, Gendered>)[type],
+      gender,
+    ),
   favorite: "Épingler",
   unfavorite: "Désépingler",
   markKnown: "Je sais qui c'est",
@@ -42,7 +66,7 @@ const fr = {
   gotIt: "Compris",
   welcome: "Choisissez le tome que vous lisez : Saga ne vous montrera que ce que vous savez déjà.",
   hintFavorite: "Les personnages épinglés restent en haut de la liste.",
-  hintKnown: "Ce personnage est replié. Une pastille « Nouveau » vous signalera toute nouvelle information sur lui.",
+  hintKnown: "Ce personnage passe en fin de liste. Une pastille « Nouveau » vous signalera toute nouvelle information sur lui.",
   help: "Comment ça marche",
   helpSections: [
     {
@@ -55,7 +79,7 @@ const fr = {
     },
     {
       title: "Épingler et « Je sais qui c'est »",
-      body: "L'étoile garde un personnage en haut de la liste. Le crochet replie un personnage que vous connaissez déjà, pour alléger la liste. Si un nouveau tome révèle quelque chose sur lui, une pastille « Nouveau » vous le signale. Sur un écran tactile, glissez le personnage vers la gauche pour accéder à ces deux actions, ou jusqu'au bout pour le marquer comme connu.",
+      body: "L'étoile garde un personnage en haut de la liste. Le crochet envoie en fin de liste un personnage que vous connaissez déjà, pour laisser la place à ceux que vous cherchez. Si un nouveau tome révèle quelque chose sur lui, une pastille « Nouveau » vous le signale. Sur un écran tactile, glissez le personnage vers la gauche pour accéder à ces deux actions, ou jusqu'au bout pour le marquer comme connu.",
     },
     {
       title: "Langue et édition",
@@ -91,6 +115,26 @@ const en: Strings = {
   editions: { en: "English (original)", fr: "French" },
   storageNote: "Your settings are stored only in this browser.",
   reset: "Reset settings",
+  house: "House",
+  allegiance: "Allegiance",
+  title: "Title",
+  introducedIn: "Introduced in",
+  newInBook: "New in this book",
+  groupBy: "Group",
+  groups: { name: "By name", house: "By house", allegiance: "By allegiance" },
+  otherGroup: "Others",
+  relation: (type, gender) =>
+    pick(
+      ({
+        spouse: { f: "Wife", m: "Husband", any: "Spouse" },
+        parent: { f: "Mother", m: "Father", any: "Parent" },
+        child: { f: "Daughter", m: "Son", any: "Child" },
+        sibling: { f: "Sister", m: "Brother", any: "Sibling" },
+        mentor: { f: "Mentor", m: "Mentor", any: "Mentor" },
+        student: { f: "Student", m: "Student", any: "Student" },
+      } as Record<RelationType, Gendered>)[type],
+      gender,
+    ),
   favorite: "Pin",
   unfavorite: "Unpin",
   markKnown: "I know who this is",
@@ -107,7 +151,7 @@ const en: Strings = {
   gotIt: "Got it",
   welcome: "Pick the book you are reading: Saga will only show what you already know.",
   hintFavorite: "Pinned characters stay at the top of the list.",
-  hintKnown: "This character is collapsed. A “New” badge will flag any new information about them.",
+  hintKnown: "This character moves to the end of the list. A “New” badge will flag any new information about them.",
   help: "How it works",
   helpSections: [
     {
@@ -120,7 +164,7 @@ const en: Strings = {
     },
     {
       title: "Pin and “I know who this is”",
-      body: "The star keeps a character at the top of the list. The check mark collapses a character you already know, to lighten the list. If a new book reveals something about them, a “New” badge tells you. On a touch screen, swipe the character to the left for both actions, or all the way to mark them as known.",
+      body: "The star keeps a character at the top of the list. The check mark sends a character you already know to the end of the list, leaving room for the ones you are looking for. If a new book reveals something about them, a “New” badge tells you. On a touch screen, swipe the character to the left for both actions, or all the way to mark them as known.",
     },
     {
       title: "Language and edition",

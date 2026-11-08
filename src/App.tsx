@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CharacterRow } from "./components/CharacterRow";
 import { HelpPage } from "./components/HelpPage";
 import { Hint } from "./components/Hint";
@@ -6,13 +6,14 @@ import { SettingsPage } from "./components/SettingsPage";
 import { STRINGS } from "./i18n";
 import { loadAll } from "./model/load";
 import { effectivePosition } from "./model/position";
-import { bookNumber, inEdition } from "./model/text";
-import { compareViews, hasNewInfo, search, viewCharacter, type CharacterView } from "./model/view";
+import { bookLabel, bookNumber, inEdition } from "./model/text";
+import { compareViews, groupViews, hasNewInfo, search, viewCharacter, type CharacterView, type GroupBy } from "./model/view";
 import { markHintSeen, markKnown, seriesProgress, toggleFavorite, unmarkKnown, type SeriesSettings } from "./settings/settings";
 import { useSettings } from "./settings/useSettings";
 
 const [{ series, characters }] = loadAll();
 const byId = new Map(characters.map((c) => [c.id, c]));
+const bookIndexOf = (id: string) => series.books.findIndex((b) => b.id === id);
 const isTouch = typeof matchMedia !== "undefined" && matchMedia("(pointer: coarse)").matches;
 
 export default function App() {
@@ -20,6 +21,21 @@ export default function App() {
   const [page, setPage] = useState<"list" | "settings" | "help">("list");
   const [query, setQuery] = useState("");
   const [hideKnown, setHideKnown] = useState(false);
+  const [highlighted, setHighlighted] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!highlighted) return;
+    const timer = setTimeout(() => setHighlighted(null), 1600);
+    return () => clearTimeout(timer);
+  }, [highlighted]);
+
+  const goTo = (id: string) => {
+    setQuery("");
+    setHideKnown(false);
+    setHighlighted(id);
+    // Wait for the list to re-render without the search filter.
+    requestAnimationFrame(() => document.getElementById(`char-${id}`)?.scrollIntoView({ behavior: "smooth", block: "center" }));
+  };
 
   const { language, edition } = settings;
   const t = STRINGS[language];
@@ -32,7 +48,7 @@ export default function App() {
 
   const views = useMemo(() => {
     return characters
-      .map((character) => viewCharacter(series, character, position, edition, language))
+      .map((character) => viewCharacter(series, character, position, edition, language, characters))
       .filter((view): view is CharacterView => view !== null)
       .sort(compareViews(language));
   }, [position, edition, language]);
@@ -82,6 +98,10 @@ export default function App() {
       onToggleFavorite={() => saveProgress(toggleFavorite(progress, view.id))}
       onToggleKnown={() => saveProgress(isKnown(view) ? unmarkKnown(progress, view.id) : markKnown(progress, view.id, position))}
       onAcknowledge={() => saveProgress(markKnown(progress, view.id, position))}
+      introducedLabel={bookLabel(series, series.books[view.introducedIndex].id, edition)}
+      newInBook={view.introducedIndex === bookIndexOf(book) && view.introducedIndex > 0}
+      highlighted={highlighted === view.id}
+      onGoTo={goTo}
     />
   );
   const currentTitle = inEdition(series.books.find((b) => b.id === book)!.title, edition);
@@ -140,6 +160,16 @@ export default function App() {
               ))}
             </select>
           </label>
+          <label className="book">
+            <span className="visually-hidden">{t.groupBy}</span>
+            <select value={settings.groupBy} onChange={(e) => setSettings({ ...settings, groupBy: e.target.value as GroupBy })}>
+              {(Object.keys(t.groups) as GroupBy[]).map((value) => (
+                <option key={value} value={value}>
+                  {t.groups[value]}
+                </option>
+              ))}
+            </select>
+          </label>
           {knownCount > 0 && (
             <button className="chip" aria-pressed={hideKnown} onClick={() => setHideKnown(!hideKnown)}>
               {hideKnown ? t.showKnown(knownCount) : t.hideKnown}
@@ -170,12 +200,22 @@ export default function App() {
             {pinned.map(renderRow)}
           </section>
         )}
-        {others.length > 0 && (
-          <section>
-            {pinned.length > 0 && <h2 className="group">{t.everyone}</h2>}
-            {others.map(renderRow)}
-          </section>
-        )}
+        {others.length > 0 &&
+          groupViews(others, settings.groupBy, t.otherGroup).map((group, i) => (
+            <section key={group.title ?? "all"}>
+              {group.title ? (
+                <h2 className="group">
+                  {group.title} · {group.views.length}
+                </h2>
+              ) : (
+                pinned.length > 0 && i === 0 && <h2 className="group">{t.everyone}</h2>
+              )}
+              {group.views
+                .slice()
+                .sort((a, b) => Number(isKnown(a)) - Number(isKnown(b)))
+                .map(renderRow)}
+            </section>
+          ))}
       </main>
     </div>
   );

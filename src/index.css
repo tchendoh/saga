@@ -165,8 +165,6 @@ main { margin-top: 12px; }
 }
 
 /* Favorites, known characters, hints */
-.namebtn { font: inherit; color: inherit; background: none; border: 0; padding: 0; text-align: left; cursor: pointer; }
-.namebtn:disabled { cursor: default; }
 .actions { display: inline-flex; gap: 2px; margin-right: -6px; }
 .act {
   font: 18px/1 var(--sans); color: var(--line); background: none; border: 0;
@@ -174,7 +172,6 @@ main { margin-top: 12px; }
 }
 .act:hover { background: var(--line); color: var(--muted); }
 .act.on { color: var(--accent); }
-.row.known .name { color: var(--muted); }
 .tag.new {
   font: 600 11px var(--mono); color: var(--bg); background: var(--accent);
   border-color: var(--accent); cursor: pointer;
@@ -198,7 +195,7 @@ main { margin-top: 12px; }
 .linkbtn { font: 600 16px var(--serif); color: var(--fg); background: none; border: 0; padding: 4px 0; cursor: pointer; }
 
 /* Swipe actions */
-.swipe { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+.swipe { position: relative; overflow: hidden; }
 .swipe .row { border-bottom: 0; }
 .swipe-content { position: relative; background: var(--bg); touch-action: pan-y; transition: transform 0.22s ease-out; }
 .swipe-actions { position: absolute; inset: 0 0 0 auto; display: flex; justify-content: flex-end; }
@@ -217,5 +214,41 @@ main { margin-top: 12px; }
 /* With a mouse, the buttons appear when hovering a row (active ones always show). */
 @media (hover: hover) and (pointer: fine) {
   .act { opacity: 0; transition: opacity 0.12s; }
-  .act.on, .row:hover .act, .act:focus-visible { opacity: 1; }
+  .act.on, .card:hover .act, .act:focus-visible { opacity: 1; }
+}
+
+/* Character card */
+main section, main { display: block; }
+.card-swipe { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 10px; background: var(--panel); }
+.card-swipe .swipe-content { background: var(--panel); }
+.card { padding: 12px 14px 10px; border-left: 3px solid var(--c); }
+.card.pinned { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 35%, transparent); }
+.card-head { display: flex; align-items: flex-start; gap: 12px; }
+.card-id { flex: 1; min-width: 0; }
+.card-head .tag.caste { flex: none; margin-top: 3px; }
+.card-body { margin-top: 6px; }
+.card-foot { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; margin-top: 8px; min-height: 0; }
+.card-foot:empty { display: none; }
+.card-foot .tags { margin-left: 0; }
+.card-foot .previous { margin-top: 0; }
+.card-foot .actions { margin-left: auto; margin-right: -8px; margin-block: -8px; }
+@media (pointer: coarse) {
+  .card-foot:not(:has(.tags, .previous)) { display: none; }
+}
+
+/* Card details */
+.card-details { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 8px 0 0; font-size: 13px; }
+.card-details > div { display: contents; }
+.card-details dt { font: 11px/1.9 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.card-details dd { margin: 0; color: var(--fg); }
+.link {
+  font: inherit; color: var(--fg); background: none; border: 0; padding: 0; cursor: pointer;
+  text-decoration: underline dotted var(--muted); text-underline-offset: 3px;
+}
+.link:hover { color: var(--accent); }
+.tag.fresh { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.card.highlight { animation: flash 1.6s ease-out; }
+@keyframes flash {
+  0%, 30% { background: var(--accent-soft); }
+  100% { background: transparent; }
 }
