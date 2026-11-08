@@ -1,15 +1,14 @@
 id: dancer
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: gs
+introduced: rr
 names:
   - value: "Dancer"
-    since: gs
+    since: rr
 aliases:
   - value: "Senator O'Faran"
     since: ig
 colors:
   - value: red
-    since: gs
+    since: rr
 allegiances:
   - value: sons-of-ares
     since: gs
