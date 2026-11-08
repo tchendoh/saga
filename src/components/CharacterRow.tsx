@@ -12,8 +12,6 @@ type Props = {
   onToggleFavorite: () => void;
   onToggleKnown: () => void;
   onAcknowledge: () => void;
-  /** Book label shown in "Introduced in". */
-  introducedLabel: string;
   newInBook: boolean;
   highlighted: boolean;
   onGoTo: (id: string) => void;
@@ -72,18 +70,13 @@ export function CharacterRow(props: Props) {
           </div>
         )}
 
-        {/* Details: fixed fields, each shown only when it has a value */}
+        {/* Details: fixed fields, each shown only when it has a value (the house is already in the name) */}
+        {(view.title || view.allegiance || view.relations.length > 0) && (
         <dl className="card-details">
           {view.title && (
             <div>
               <dt>{t.title}</dt>
               <dd>{view.title}</dd>
-            </div>
-          )}
-          {view.house && (
-            <div>
-              <dt>{t.house}</dt>
-              <dd>{view.house}</dd>
             </div>
           )}
           {view.allegiance && (
@@ -102,11 +95,8 @@ export function CharacterRow(props: Props) {
               </dd>
             </div>
           ))}
-          <div>
-            <dt>{t.introducedIn}</dt>
-            <dd>{props.introducedLabel}</dd>
-          </div>
         </dl>
+        )}
 
         {/* Footer: status tags, former names and (with a mouse) actions */}
         <footer className="card-foot">

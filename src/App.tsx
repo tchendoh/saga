@@ -6,7 +6,7 @@ import { SettingsPage } from "./components/SettingsPage";
 import { STRINGS } from "./i18n";
 import { loadAll } from "./model/load";
 import { effectivePosition } from "./model/position";
-import { bookLabel, bookNumber, inEdition } from "./model/text";
+import { bookNumber, inEdition } from "./model/text";
 import { compareViews, groupViews, hasNewInfo, search, viewCharacter, type CharacterView, type GroupBy } from "./model/view";
 import { markHintSeen, markKnown, seriesProgress, toggleFavorite, unmarkKnown, type SeriesSettings } from "./settings/settings";
 import { useSettings } from "./settings/useSettings";
@@ -98,7 +98,6 @@ export default function App() {
       onToggleFavorite={() => saveProgress(toggleFavorite(progress, view.id))}
       onToggleKnown={() => saveProgress(isKnown(view) ? unmarkKnown(progress, view.id) : markKnown(progress, view.id, position))}
       onAcknowledge={() => saveProgress(markKnown(progress, view.id, position))}
-      introducedLabel={bookLabel(series, series.books[view.introducedIndex].id, edition)}
       newInBook={view.introducedIndex === bookIndexOf(book) && view.introducedIndex > 0}
       highlighted={highlighted === view.id}
       onGoTo={goTo}
