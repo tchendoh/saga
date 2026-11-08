@@ -18,6 +18,8 @@ export const Settings = z.object({
   edition: Edition,
   /** Reading progress, per series id. */
   series: z.record(z.string(), SeriesSettings).default({}),
+  /** How the character list is grouped. */
+  groupBy: z.enum(["name", "house", "allegiance"]).default("name"),
   /** One-time hints already shown. */
   seenHints: z.array(z.string()).default([]),
 });
@@ -28,7 +30,7 @@ export const STORAGE_KEY = "saga.settings.v1";
 /** Interface language from the browser; the edition follows it by default. */
 export function defaultSettings(browserLanguage = "fr"): Settings {
   const language: Language = browserLanguage.toLowerCase().startsWith("en") ? "en" : "fr";
-  return { language, edition: language, series: {}, seenHints: [] };
+  return { language, edition: language, series: {}, groupBy: "name", seenHints: [] };
 }
 
 /** Minimal storage interface, so tests can pass a fake instead of localStorage. */

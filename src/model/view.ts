@@ -1,5 +1,5 @@
 import { bookIndex, isVisible, type Position } from "./position";
-import type { Character, Edition, EditionText, Language, Role, Series } from "./schema";
+import type { Character, Edition, EditionText, Gender, Language, RelationType, Role, Series } from "./schema";
 import { inEdition } from "./text";
 
 /** What the reader is allowed to see of a character, resolved for one edition and language. */
@@ -11,6 +11,12 @@ export type CharacterView = {
   aliases: string[];
   color: { id: string; name: string; hex: string; particle?: string };
   roles: Role[];
+  house?: string;
+  allegiance?: string;
+  title?: string;
+  relations: { type: RelationType; targetId: string; targetName: string; targetGender?: Gender }[];
+  /** Index of the book where the character first appears. */
+  introducedIndex: number;
   facts: string[];
   death?: string;
   /** Every visible name and alias, in every edition, normalized for search. */
@@ -35,6 +41,7 @@ export function viewCharacter(
   position: Position,
   edition: Edition,
   language: Language,
+  all: Character[] = [],
 ): CharacterView | null {
   if (!isVisible(series, character.introduced, position)) return null;
   const visible = <T>(entries: Dated<T>[]) => entries.filter((entry) => isVisible(series, entry.since, position));
@@ -45,8 +52,29 @@ export function viewCharacter(
   const color = series.colors.find((c) => c.id === colorId)!;
   const death = character.death && isVisible(series, character.death.since, position) ? character.death.value[language] : undefined;
 
+  const latest = <T>(entries: Dated<T>[]) => visible(entries).at(-1)?.value;
+  const nameOf = (id: string, list: { id: string; name: EditionText }[]) => {
+    const item = list.find((x) => x.id === id);
+    return item && inEdition(item.name, edition);
+  };
+  const houseId = latest(character.houses);
+  const allegianceId = latest(character.allegiances);
+  const title = latest(character.titles);
+
+  const relations = visible(character.relations).flatMap(({ value }) => {
+    const target = all.find((c) => c.id === value.target);
+    if (!target || !isVisible(series, target.introduced, position)) return [];
+    const targetNames = target.names.filter((n) => isVisible(series, n.since, position));
+    return [{ type: value.type, targetId: target.id, targetName: inEdition(targetNames.at(-1)!.value, edition), targetGender: target.gender }];
+  });
+
   return {
     id: character.id,
+    house: houseId && nameOf(houseId, series.houses),
+    allegiance: allegianceId && nameOf(allegianceId, series.allegiances),
+    title: title && inEdition(title, edition),
+    relations,
+    introducedIndex: bookIndex(series, character.introduced),
     // The latest revealed name is the one the reader knows best.
     name: inEdition(names.at(-1)!.value, edition),
     previousNames: names.slice(0, -1).reverse().map((n) => inEdition(n.value, edition)),
@@ -88,6 +116,10 @@ export function hasNewInfo(series: Series, character: Character, knownAt: Positi
     ...character.aliases,
     ...character.colors,
     ...character.roles,
+    ...character.houses,
+    ...character.allegiances,
+    ...character.titles,
+    ...character.relations,
     ...character.facts,
     ...(character.death ? [character.death] : []),
   ];
@@ -95,4 +127,19 @@ export function hasNewInfo(series: Series, character: Character, knownAt: Positi
     const index = bookIndex(series, entry.since);
     return index > knownAt && index <= position;
   });
+}
+
+export type GroupBy = "name" | "house" | "allegiance";
+
+/** Splits views into titled groups; characters without a value go last, under `otherLabel`. */
+export function groupViews(views: CharacterView[], by: GroupBy, otherLabel: string): { title?: string; views: CharacterView[] }[] {
+  if (by === "name") return [{ views }];
+  const groups = new Map<string, CharacterView[]>();
+  for (const view of views) {
+    const key = view[by] ?? "";
+    groups.set(key, [...(groups.get(key) ?? []), view]);
+  }
+  return [...groups.entries()]
+    .sort(([a], [b]) => (a === "" ? 1 : b === "" ? -1 : a.localeCompare(b)))
+    .map(([key, list]) => ({ title: key || otherLabel, views: list }));
 }

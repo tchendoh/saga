@@ -5,7 +5,7 @@ import type { Character, Series } from "./schema";
  * Spoiler-safety rules that Zod alone cannot express, because they need the series.
  * Returns a list of human-readable problems (empty when everything is fine).
  */
-export function checkCharacter(series: Series, character: Character): string[] {
+export function checkCharacter(series: Series, character: Character, all: Character[] = [character]): string[] {
   const problems: string[] = [];
   const where = `character "${character.id}"`;
   const index = (bookId: string, field: string): number | undefined => {
@@ -25,6 +25,10 @@ export function checkCharacter(series: Series, character: Character): string[] {
     aliases: character.aliases,
     colors: character.colors,
     roles: character.roles,
+    houses: character.houses,
+    allegiances: character.allegiances,
+    titles: character.titles,
+    relations: character.relations,
     facts: character.facts,
   };
   for (const [field, entries] of Object.entries(datedFields)) {
@@ -45,6 +49,31 @@ export function checkCharacter(series: Series, character: Character): string[] {
   const colorIds = new Set(series.colors.map((color) => color.id));
   character.colors.forEach((entry, i) => {
     if (!colorIds.has(entry.value)) problems.push(`${where}: colors[${i}] "${entry.value}" is not a known color`);
+  });
+
+  for (const [field, list] of [
+    ["houses", series.houses],
+    ["allegiances", series.allegiances],
+  ] as const) {
+    const ids = new Set(list.map((item) => item.id));
+    character[field].forEach((entry, i) => {
+      if (!ids.has(entry.value)) problems.push(`${where}: ${field}[${i}] "${entry.value}" is not defined in the series`);
+    });
+  }
+
+  const byId = new Map(all.map((c) => [c.id, c]));
+  character.relations.forEach((entry, i) => {
+    const target = byId.get(entry.value.target);
+    if (!target) {
+      problems.push(`${where}: relations[${i}] targets unknown character "${entry.value.target}"`);
+      return;
+    }
+    // A relation must not reveal a character the reader has not met yet.
+    const since = index(entry.since, `relations[${i}].since`);
+    const targetIntroduced = index(target.introduced, `relations[${i}] target introduced`);
+    if (since !== undefined && targetIntroduced !== undefined && since < targetIntroduced) {
+      problems.push(`${where}: relations[${i}] is revealed before "${target.id}" is introduced`);
+    }
   });
 
   if (character.death) {

@@ -21,14 +21,20 @@ export function loadAll(): LoadedSeries[] {
     }
     const series = parsedSeries.data;
     const characters: Character[] = [];
+    const paths = new Map<string, string>();
     for (const path of Object.keys(files).filter((p) => p.startsWith(`${folder}characters/`))) {
       const parsed = Character.safeParse(parse(files[path]));
       if (!parsed.success) {
         problems.push(`${path}: ${parsed.error.message}`);
         continue;
       }
-      problems.push(...checkCharacter(series, parsed.data).map((p) => `${path}: ${p}`));
+      if (paths.has(parsed.data.id)) problems.push(`${path}: duplicate id "${parsed.data.id}" (also in ${paths.get(parsed.data.id)})`);
+      paths.set(parsed.data.id, path);
       characters.push(parsed.data);
+    }
+    // Checked once everyone is loaded, since relations point to other characters.
+    for (const character of characters) {
+      problems.push(...checkCharacter(series, character, characters).map((p) => `${paths.get(character.id)}: ${p}`));
     }
     result.push({ series, characters });
   }

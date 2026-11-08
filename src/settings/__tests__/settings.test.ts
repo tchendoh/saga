@@ -42,6 +42,7 @@ describe("loadSettings and saveSettings", () => {
       language: "fr" as const,
       edition: "en" as const,
       series: { "red-rising": { book: "gs", level: "finished" as const, favorites: ["sevro"], known: { darrow: 1 } } },
+      groupBy: "house" as const,
       seenHints: ["welcome"],
     };
     saveSettings(store, settings);
