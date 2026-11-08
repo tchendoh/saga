@@ -38,9 +38,22 @@ export const Series = z.object({
   author: z.string(),
   /** In reading order. */
   books: z.array(Book).min(1),
-  colors: z.array(z.object({ id: z.string(), name: EditionText })),
+  colors: z.array(
+    z.object({
+      id: z.string(),
+      name: EditionText,
+      hex: z.string().regex(/^#[0-9a-f]{6}$/i),
+      /** Word that marks this color in names, e.g. "au" for Gold; may differ per edition. */
+      particle: EditionText.optional(),
+    }),
+  ),
 });
 export type Series = z.infer<typeof Series>;
+
+/** The character's role in the storytelling, outside the story itself. */
+export const ROLES = ["protagonist", "narrator"] as const;
+export const Role = z.enum(ROLES);
+export type Role = z.infer<typeof Role>;
 
 /** Wraps a value with the book from which the reader knows it. */
 const dated = <T extends z.ZodType>(value: T) => z.object({ value, since: BookId });
@@ -52,6 +65,7 @@ export const Character = z.object({
   names: z.array(dated(EditionText)).min(1),
   aliases: z.array(dated(EditionText)).default([]),
   colors: z.array(dated(z.string())).min(1),
+  roles: z.array(dated(Role)).default([]),
   facts: z.array(dated(LocalizedText)).default([]),
   death: dated(LocalizedText).optional(),
 });

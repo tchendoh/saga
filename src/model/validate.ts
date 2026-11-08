@@ -24,6 +24,7 @@ export function checkCharacter(series: Series, character: Character): string[] {
     names: character.names,
     aliases: character.aliases,
     colors: character.colors,
+    roles: character.roles,
     facts: character.facts,
   };
   for (const [field, entries] of Object.entries(datedFields)) {

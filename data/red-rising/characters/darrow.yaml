@@ -13,6 +13,11 @@ colors:
 aliases:
   - value: { en: The Reaper, fr: le Faucheur }
     since: gs
+roles:
+  - value: protagonist
+    since: rr
+  - value: narrator
+    since: rr
 facts:
   - since: rr
     value:

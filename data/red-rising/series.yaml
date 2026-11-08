@@ -17,7 +17,17 @@ books:
   - id: lb
     title: Light Bringer
 colors:
-  - id: red
-    name: { en: Red, fr: Rouge }
-  - id: gold
-    name: { en: Gold, fr: Or }
+  - { id: gold, hex: "#d4a72c", particle: au, name: { en: Gold, fr: Or } }
+  - { id: red, hex: "#e5534b", particle: { en: of, fr: de }, name: { en: Red, fr: Rouge } }
+  - { id: gray, hex: "#8b949e", name: { en: Gray, fr: Gris } }
+  - { id: blue, hex: "#539bf5", name: { en: Blue, fr: Bleu } }
+  - { id: orange, hex: "#e0823d", name: { en: Orange, fr: Orange } }
+  - { id: silver, hex: "#c9d1d9", particle: ag, name: { en: Silver, fr: Argent } }
+  - { id: copper, hex: "#c07a45", particle: cu, name: { en: Copper, fr: Cuivre } }
+  - { id: pink, hex: "#f08cb8", name: { en: Pink, fr: Rose } }
+  - { id: green, hex: "#57ab5a", name: { en: Green, fr: Vert } }
+  - { id: obsidian, hex: "#9da7b3", name: { en: Obsidian, fr: Obsidienne } }
+  - { id: white, hex: "#f0f6fc", name: { en: White, fr: Blanc } }
+  - { id: brown, hex: "#8d6748", name: { en: Brown, fr: Brun } }
+  - { id: violet, hex: "#a371f7", name: { en: Violet, fr: Violet } }
+  - { id: yellow, hex: "#e3b341", name: { en: Yellow, fr: Jaune } }

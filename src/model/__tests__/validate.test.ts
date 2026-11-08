@@ -10,7 +10,7 @@ const series: Series = {
     { id: "one", title: "One" },
     { id: "two", title: "Two" },
   ],
-  colors: [{ id: "red", name: "Red" }],
+  colors: [{ id: "red", name: "Red", hex: "#e5534b" }],
 };
 
 const valid = {
