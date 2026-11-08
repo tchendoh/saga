@@ -13,6 +13,7 @@ import { useSettings } from "./settings/useSettings";
 
 const [{ series, characters }] = loadAll();
 const byId = new Map(characters.map((c) => [c.id, c]));
+const isTouch = typeof matchMedia !== "undefined" && matchMedia("(pointer: coarse)").matches;
 
 export default function App() {
   const { settings, setSettings, reset } = useSettings();
@@ -154,6 +155,9 @@ export default function App() {
         {showHint("welcome") && <Hint text={t.welcome} dismissLabel={t.gotIt} onDismiss={() => dismiss("welcome")} />}
         {favorites.length > 0 && showHint("favorite") && (
           <Hint text={t.hintFavorite} dismissLabel={t.gotIt} onDismiss={() => dismiss("favorite")} />
+        )}
+        {isTouch && !showHint("welcome") && showHint("swipe") && (
+          <Hint text={t.hintSwipe} dismissLabel={t.gotIt} onDismiss={() => dismiss("swipe")} />
         )}
         {Object.keys(known).length > 0 && showHint("known") && (
           <Hint text={t.hintKnown} dismissLabel={t.gotIt} onDismiss={() => dismiss("known")} />

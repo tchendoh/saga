@@ -1,6 +1,7 @@
 import { useState, type CSSProperties } from "react";
 import type { STRINGS } from "../i18n";
 import { nameParts, type CharacterView } from "../model/view";
+import { SwipeRow } from "./SwipeRow";
 
 type Props = {
   view: CharacterView;
@@ -20,7 +21,15 @@ export function CharacterRow({ view, t, favorite, known, isNew, onToggleFavorite
   const color = { "--c": view.color.hex } as CSSProperties;
 
   return (
-    <article className={`row${known ? " known" : ""}`} style={color}>
+    <SwipeRow
+      className={known ? "known" : ""}
+      style={color}
+      actions={[
+        { label: known ? t.unmarkKnownShort : t.markKnownShort, icon: "✓", onAction: onToggleKnown, tone: "accent" },
+        { label: favorite ? t.unfavorite : t.favorite, icon: favorite ? "☆" : "★", onAction: onToggleFavorite },
+      ]}
+    >
+    <article className={`row${known ? " known" : ""}`}>
       <div className="line1">
         <h2 className="name">
           <button className="namebtn" onClick={() => known && setExpanded(!expanded)} disabled={!known} aria-expanded={known ? expanded : undefined}>
@@ -79,5 +88,6 @@ export function CharacterRow({ view, t, favorite, known, isNew, onToggleFavorite
         </>
       )}
     </article>
+    </SwipeRow>
   );
 }
