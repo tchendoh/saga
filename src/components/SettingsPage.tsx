@@ -1,4 +1,5 @@
 import type { STRINGS } from "../i18n";
+import type { SpoilerLevel } from "../model/position";
 import { EDITIONS, LANGUAGES, type Edition, type Language } from "../model/schema";
 import type { Settings } from "../settings/settings";
 
@@ -7,10 +8,15 @@ type Props = {
   onChange: (settings: Settings) => void;
   onReset: () => void;
   onBack: () => void;
+  onHelp: () => void;
+  level: SpoilerLevel;
+  onLevel: (level: SpoilerLevel) => void;
   t: (typeof STRINGS)["fr"];
 };
 
-export function SettingsPage({ settings, onChange, onReset, onBack, t }: Props) {
+const LEVELS: SpoilerLevel[] = ["none", "finished", "all"];
+
+export function SettingsPage({ settings, onChange, onReset, onBack, onHelp, level, onLevel, t }: Props) {
   return (
     <div className="settings">
       <div className="topbar">
@@ -19,6 +25,18 @@ export function SettingsPage({ settings, onChange, onReset, onBack, t }: Props) 
         </button>
       </div>
       <h1>{t.settings}</h1>
+
+      <section className="setting">
+        <h2>{t.spoilerLevel}</h2>
+        <p className="help">{t.spoilerHelp}</p>
+        <div className="tabs" role="group" aria-label={t.spoilerLevel}>
+          {LEVELS.map((value) => (
+            <button key={value} aria-pressed={value === level} onClick={() => onLevel(value)}>
+              {t.spoilers[value]}
+            </button>
+          ))}
+        </div>
+      </section>
 
       <section className="setting">
         <h2>{t.language}</h2>
@@ -47,6 +65,12 @@ export function SettingsPage({ settings, onChange, onReset, onBack, t }: Props) 
             </button>
           ))}
         </div>
+      </section>
+
+      <section className="setting">
+        <button className="linkbtn" onClick={onHelp}>
+          {t.help} ›
+        </button>
       </section>
 
       <section className="setting">

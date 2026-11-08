@@ -7,9 +7,10 @@ const fr = {
   searchLabel: "Rechercher un personnage",
   clearSearch: "Effacer la recherche",
   currentBook: "Tome en cours",
-  spoilerLevel: "Niveau de spoiler",
+  spoilerLevel: "Divulgâcheurs",
+  spoilerHelp: "Ce que Saga vous montre du tome choisi. Ce réglage vaut pour cette série seulement.",
   spoilers: { none: "Rien", finished: "Tome fini", all: "Tout" } as Record<SpoilerLevel, string>,
-  allBanner: "Mode « Tout » : toute la série est dévoilée.",
+  allBanner: "Divulgâcheurs : « Tout ». Toute la série est dévoilée.",
   noResults: "Aucun personnage ne correspond. Essayez un surnom.",
   roles: { protagonist: "Protagoniste", narrator: "Narrateur" } as Record<Role, string>,
   dead: "Mort",
@@ -25,6 +26,39 @@ const fr = {
   editions: { en: "Anglaise (originale)", fr: "Française" } as Record<Edition, string>,
   storageNote: "Vos réglages sont enregistrés seulement dans ce navigateur.",
   reset: "Réinitialiser les réglages",
+  favorite: "Épingler",
+  unfavorite: "Désépingler",
+  markKnown: "Je sais qui c'est",
+  unmarkKnown: "Je ne m'en souviens plus",
+  newInfo: "Nouveau",
+  acknowledge: "Marquer comme vu",
+  pinned: "Épinglés",
+  everyone: "Tous les personnages",
+  hideKnown: "Masquer les connus",
+  showKnown: (n: number) => `Afficher les connus (${n})`,
+  gotIt: "Compris",
+  welcome: "Choisissez le tome que vous lisez : Saga ne vous montrera que ce que vous savez déjà.",
+  hintFavorite: "Les personnages épinglés restent en haut de la liste.",
+  hintKnown: "Ce personnage est replié. Une pastille « Nouveau » vous signalera toute nouvelle information sur lui.",
+  help: "Comment ça marche",
+  helpSections: [
+    {
+      title: "Sans divulgâcheur",
+      body: "Choisissez le tome que vous lisez. Saga n'affiche que ce que vous savez au début de ce tome : ce qu'un tome révèle n'apparait qu'à partir du tome suivant. Les personnages pas encore introduits n'apparaissent nulle part, même dans la recherche.",
+    },
+    {
+      title: "Divulgâcheurs",
+      body: "« Rien » montre ce que vous savez au début du tome. « Tome fini » ajoute ce que le tome actuel révèle, pour vous rafraichir la mémoire. « Tout » dévoile la série entière : un bandeau le rappelle tant qu'il est actif. Ce réglage se trouve dans les réglages.",
+    },
+    {
+      title: "Épingler et « Je sais qui c'est »",
+      body: "L'étoile garde un personnage en haut de la liste. Le crochet replie un personnage que vous connaissez déjà, pour alléger la liste. Si un nouveau tome révèle quelque chose sur lui, une pastille « Nouveau » vous le signale.",
+    },
+    {
+      title: "Langue et édition",
+      body: "La langue de l'application concerne les menus et les descriptions. L'édition lue concerne les noms, surnoms et termes de l'univers : vous pouvez lire en anglais avec des descriptions en français. La recherche fouille toutes les éditions.",
+    },
+  ],
 };
 
 type Strings = typeof fr;
@@ -35,7 +69,8 @@ const en: Strings = {
   searchLabel: "Search for a character",
   clearSearch: "Clear search",
   currentBook: "Current book",
-  spoilerLevel: "Spoiler level",
+  spoilerLevel: "Spoilers",
+  spoilerHelp: "What Saga shows you of the chosen book. This setting applies to this series only.",
   spoilers: { none: "None", finished: "Book done", all: "All" },
   allBanner: "“All” mode: the whole series is revealed.",
   noResults: "No matching character. Try a nickname.",
@@ -53,6 +88,39 @@ const en: Strings = {
   editions: { en: "English (original)", fr: "French" },
   storageNote: "Your settings are stored only in this browser.",
   reset: "Reset settings",
+  favorite: "Pin",
+  unfavorite: "Unpin",
+  markKnown: "I know who this is",
+  unmarkKnown: "I don't remember anymore",
+  newInfo: "New",
+  acknowledge: "Mark as seen",
+  pinned: "Pinned",
+  everyone: "All characters",
+  hideKnown: "Hide known",
+  showKnown: (n) => `Show known (${n})`,
+  gotIt: "Got it",
+  welcome: "Pick the book you are reading: Saga will only show what you already know.",
+  hintFavorite: "Pinned characters stay at the top of the list.",
+  hintKnown: "This character is collapsed. A “New” badge will flag any new information about them.",
+  help: "How it works",
+  helpSections: [
+    {
+      title: "Spoiler-free",
+      body: "Pick the book you are reading. Saga only shows what you know at the start of that book: whatever a book reveals appears from the next book on. Characters not introduced yet appear nowhere, not even in search.",
+    },
+    {
+      title: "Spoiler levels",
+      body: "“None” shows what you know at the start of the book. “Book done” adds what the current book reveals, to refresh your memory. “All” reveals the whole series: a banner reminds you while it is on. You will find this in the settings.",
+    },
+    {
+      title: "Pin and “I know who this is”",
+      body: "The star keeps a character at the top of the list. The check mark collapses a character you already know, to lighten the list. If a new book reveals something about them, a “New” badge tells you.",
+    },
+    {
+      title: "Language and edition",
+      body: "The app language covers menus and descriptions. The edition covers names, nicknames and world terms: you can read in English with descriptions in French. Search looks through every edition.",
+    },
+  ],
 };
 
 export const STRINGS: Record<Language, Strings> = { fr, en };

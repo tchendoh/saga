@@ -1,45 +1,88 @@
 import { useMemo, useState } from "react";
 import { CharacterRow } from "./components/CharacterRow";
+import { HelpPage } from "./components/HelpPage";
+import { Hint } from "./components/Hint";
 import { SettingsPage } from "./components/SettingsPage";
 import { STRINGS } from "./i18n";
 import { loadAll } from "./model/load";
-import { effectivePosition, type SpoilerLevel } from "./model/position";
+import { effectivePosition } from "./model/position";
 import { bookNumber, inEdition } from "./model/text";
-import { compareViews, search, viewCharacter, type CharacterView } from "./model/view";
-import { seriesProgress, type SeriesSettings } from "./settings/settings";
+import { compareViews, hasNewInfo, search, viewCharacter, type CharacterView } from "./model/view";
+import { markHintSeen, markKnown, seriesProgress, toggleFavorite, unmarkKnown, type SeriesSettings } from "./settings/settings";
 import { useSettings } from "./settings/useSettings";
 
 const [{ series, characters }] = loadAll();
-const LEVELS: SpoilerLevel[] = ["none", "finished", "all"];
+const byId = new Map(characters.map((c) => [c.id, c]));
 
 export default function App() {
   const { settings, setSettings, reset } = useSettings();
-  const [page, setPage] = useState<"list" | "settings">("list");
+  const [page, setPage] = useState<"list" | "settings" | "help">("list");
   const [query, setQuery] = useState("");
+  const [hideKnown, setHideKnown] = useState(false);
 
   const { language, edition } = settings;
   const t = STRINGS[language];
-  const { book, level } = seriesProgress(settings, series.id, series.books[0].id);
-  const setProgress = (change: Partial<SeriesSettings>) =>
-    setSettings({ ...settings, series: { ...settings.series, [series.id]: { book, level, ...change } } });
+  const progress = seriesProgress(settings, series.id, series.books[0].id);
+  const { book, level, favorites, known } = progress;
+  const position = effectivePosition(series, book, level);
+  const saveProgress = (next: SeriesSettings) => setSettings({ ...settings, series: { ...settings.series, [series.id]: next } });
+  const dismiss = (hint: string) => setSettings(markHintSeen(settings, hint));
+  const showHint = (hint: string) => !settings.seenHints.includes(hint);
 
   const views = useMemo(() => {
-    const position = effectivePosition(series, book, level);
     return characters
       .map((character) => viewCharacter(series, character, position, edition, language))
       .filter((view): view is CharacterView => view !== null)
       .sort(compareViews(language));
-  }, [book, level, edition, language]);
+  }, [position, edition, language]);
 
-  if (page === "settings") {
+  if (page === "help") {
     return (
       <div className="wrap">
-        <SettingsPage settings={settings} onChange={setSettings} onReset={reset} onBack={() => setPage("list")} t={t} />
+        <HelpPage t={t} onBack={() => setPage("settings")} />
       </div>
     );
   }
 
-  const results = search(views, query);
+  if (page === "settings") {
+    return (
+      <div className="wrap">
+        <SettingsPage
+          settings={settings}
+          onChange={setSettings}
+          onReset={reset}
+          onBack={() => setPage("list")}
+          onHelp={() => setPage("help")}
+          level={level}
+          onLevel={(value) => saveProgress({ ...progress, level: value })}
+          t={t}
+        />
+      </div>
+    );
+  }
+
+  const isKnown = (view: CharacterView) => view.id in known;
+  const knownCount = views.filter(isKnown).length;
+  const results = search(views, query).filter((view) => !(hideKnown && isKnown(view) && !favorites.includes(view.id)));
+  const pinned = results.filter((view) => favorites.includes(view.id));
+  // Characters the reader already knows go to the end; the sort is stable, so the usual order is kept within each group.
+  const others = results
+    .filter((view) => !favorites.includes(view.id))
+    .sort((a, b) => Number(isKnown(a)) - Number(isKnown(b)));
+
+  const renderRow = (view: CharacterView) => (
+    <CharacterRow
+      key={view.id}
+      view={view}
+      t={t}
+      favorite={favorites.includes(view.id)}
+      known={isKnown(view)}
+      isNew={isKnown(view) && hasNewInfo(series, byId.get(view.id)!, known[view.id], position)}
+      onToggleFavorite={() => saveProgress(toggleFavorite(progress, view.id))}
+      onToggleKnown={() => saveProgress(isKnown(view) ? unmarkKnown(progress, view.id) : markKnown(progress, view.id, position))}
+      onAcknowledge={() => saveProgress(markKnown(progress, view.id, position))}
+    />
+  );
   const currentTitle = inEdition(series.books.find((b) => b.id === book)!.title, edition);
 
   return (
@@ -88,7 +131,7 @@ export default function App() {
         <div className="row2">
           <label className="book">
             <span className="visually-hidden">{t.currentBook}</span>
-            <select value={book} onChange={(e) => setProgress({ book: e.target.value })}>
+            <select value={book} onChange={(e) => saveProgress({ ...progress, book: e.target.value })}>
               {series.books.map((b) => (
                 <option key={b.id} value={b.id}>
                   {bookNumber(series, b.id)}. {inEdition(b.title, edition)}
@@ -96,13 +139,11 @@ export default function App() {
               ))}
             </select>
           </label>
-          <div className="tabs" role="group" aria-label={t.spoilerLevel}>
-            {LEVELS.map((value) => (
-              <button key={value} aria-pressed={value === level} onClick={() => setProgress({ level: value })}>
-                {t.spoilers[value]}
-              </button>
-            ))}
-          </div>
+          {knownCount > 0 && (
+            <button className="chip" aria-pressed={hideKnown} onClick={() => setHideKnown(!hideKnown)}>
+              {hideKnown ? t.showKnown(knownCount) : t.hideKnown}
+            </button>
+          )}
           <span className="count">{results.length}</span>
         </div>
       </div>
@@ -110,10 +151,26 @@ export default function App() {
       {level === "all" && <p className="banner">{t.allBanner}</p>}
 
       <main>
-        {results.length === 0 ? (
-          <p className="empty">{t.noResults}</p>
-        ) : (
-          results.map((view) => <CharacterRow key={view.id} view={view} t={t} />)
+        {showHint("welcome") && <Hint text={t.welcome} dismissLabel={t.gotIt} onDismiss={() => dismiss("welcome")} />}
+        {favorites.length > 0 && showHint("favorite") && (
+          <Hint text={t.hintFavorite} dismissLabel={t.gotIt} onDismiss={() => dismiss("favorite")} />
+        )}
+        {Object.keys(known).length > 0 && showHint("known") && (
+          <Hint text={t.hintKnown} dismissLabel={t.gotIt} onDismiss={() => dismiss("known")} />
+        )}
+
+        {results.length === 0 && <p className="empty">{t.noResults}</p>}
+        {pinned.length > 0 && (
+          <section>
+            <h2 className="group">{t.pinned}</h2>
+            {pinned.map(renderRow)}
+          </section>
+        )}
+        {others.length > 0 && (
+          <section>
+            {pinned.length > 0 && <h2 className="group">{t.everyone}</h2>}
+            {others.map(renderRow)}
+          </section>
         )}
       </main>
     </div>
