@@ -227,14 +227,12 @@ main section, main { display: block; }
 .card-id { flex: 1; min-width: 0; }
 .card-head .tag.caste { flex: none; margin-top: 3px; }
 .card-body { margin-top: 6px; }
+.card-foot:not(:has(.tags, .previous)) { display: none; }
 .card-foot { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; margin-top: 8px; min-height: 0; }
 .card-foot:empty { display: none; }
 .card-foot .tags { margin-left: 0; }
 .card-foot .previous { margin-top: 0; }
-.card-foot .actions { margin-left: auto; margin-right: -8px; margin-block: -8px; }
-@media (pointer: coarse) {
-  .card-foot:not(:has(.tags, .previous)) { display: none; }
-}
+.card-head .actions { flex: none; margin: -10px -10px -10px -4px; }
 
 /* Card details */
 .card-details { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 8px 0 0; font-size: 13px; }

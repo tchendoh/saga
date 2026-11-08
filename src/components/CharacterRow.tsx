@@ -48,7 +48,7 @@ export function CharacterRow(props: Props) {
       ]}
     >
       <article id={`char-${view.id}`} className={`card${favorite ? " pinned" : ""}${props.highlighted ? " highlight" : ""}`}>
-        {/* Header: identity on the left, color always in the top-right corner */}
+        {/* Header: identity on the left; color (and, with a mouse, actions) in the top-right corner */}
         <header className="card-head">
           <div className="card-id">
             {name}
@@ -57,6 +57,14 @@ export function CharacterRow(props: Props) {
             )}
           </div>
           <span className="tag caste">{view.color.name}</span>
+          <span className="actions">
+            <button className={`act${favorite ? " on" : ""}`} onClick={onToggleFavorite} aria-pressed={favorite} aria-label={favorite ? t.unfavorite : t.favorite} title={favorite ? t.unfavorite : t.favorite}>
+              {favorite ? "★" : "☆"}
+            </button>
+            <button className={`act${known ? " on" : ""}`} onClick={onToggleKnown} aria-pressed={known} aria-label={known ? t.unmarkKnown : t.markKnown} title={known ? t.unmarkKnown : t.markKnown}>
+              ✓
+            </button>
+          </span>
         </header>
 
         {(view.facts.length > 0 || view.death) && (
@@ -98,7 +106,7 @@ export function CharacterRow(props: Props) {
         </dl>
         )}
 
-        {/* Footer: status tags, former names and (with a mouse) actions */}
+        {/* Footer: status tags and former names */}
         <footer className="card-foot">
           {hasFooterTags && (
             <span className="tags">
@@ -124,14 +132,6 @@ export function CharacterRow(props: Props) {
               {showPrevious && <span> {view.previousNames.join(", ")}</span>}
             </span>
           )}
-          <span className="actions">
-            <button className={`act${favorite ? " on" : ""}`} onClick={onToggleFavorite} aria-pressed={favorite} aria-label={favorite ? t.unfavorite : t.favorite} title={favorite ? t.unfavorite : t.favorite}>
-              {favorite ? "★" : "☆"}
-            </button>
-            <button className={`act${known ? " on" : ""}`} onClick={onToggleKnown} aria-pressed={known} aria-label={known ? t.unmarkKnown : t.markKnown} title={known ? t.unmarkKnown : t.markKnown}>
-              ✓
-            </button>
-          </span>
         </footer>
       </article>
     </SwipeRow>
