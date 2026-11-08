@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { Character, type Series } from "../schema";
-import { compareViews, nameParts, normalize, search, viewCharacter } from "../view";
+import { compareViews, hasNewInfo, nameParts, normalize, search, viewCharacter } from "../view";
 
 const series: Series = {
   id: "test",
@@ -106,5 +106,17 @@ describe("nameParts", () => {
   });
   it("returns the whole name when the color has no particle", () => {
     expect(nameParts("Ragnar Volarus")).toEqual([{ text: "Ragnar Volarus", isParticle: false }]);
+  });
+});
+
+describe("hasNewInfo", () => {
+  it("is false while nothing new is revealed", () => {
+    expect(hasNewInfo(series, hero, 0, 0)).toBe(false);
+  });
+  it("is true once a later book reveals something", () => {
+    expect(hasNewInfo(series, hero, 0, 1)).toBe(true);
+  });
+  it("is false again after acknowledging at the new position", () => {
+    expect(hasNewInfo(series, hero, 1, 1)).toBe(false);
   });
 });

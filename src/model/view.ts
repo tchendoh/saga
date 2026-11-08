@@ -1,4 +1,4 @@
-import { isVisible, type Position } from "./position";
+import { bookIndex, isVisible, type Position } from "./position";
 import type { Character, Edition, EditionText, Language, Role, Series } from "./schema";
 import { inEdition } from "./text";
 
@@ -76,4 +76,23 @@ export function compareViews(locale: string) {
 export function nameParts(name: string, particle?: string): { text: string; isParticle: boolean }[] {
   if (!particle) return [{ text: name, isParticle: false }];
   return name.split(/(\s+)/).map((text) => ({ text, isParticle: text.toLowerCase() === particle.toLowerCase() }));
+}
+
+/**
+ * True when something about the character became visible after the reader marked them as known,
+ * i.e. revealed in a book after `knownAt` and up to the current position.
+ */
+export function hasNewInfo(series: Series, character: Character, knownAt: Position, position: Position): boolean {
+  const entries: { since: string }[] = [
+    ...character.names,
+    ...character.aliases,
+    ...character.colors,
+    ...character.roles,
+    ...character.facts,
+    ...(character.death ? [character.death] : []),
+  ];
+  return entries.some((entry) => {
+    const index = bookIndex(series, entry.since);
+    return index > knownAt && index <= position;
+  });
 }
