@@ -55,7 +55,7 @@ const fr = {
     },
     {
       title: "Épingler et « Je sais qui c'est »",
-      body: "L'étoile garde un personnage en haut de la liste. Le crochet replie un personnage que vous connaissez déjà, pour alléger la liste. Si un nouveau tome révèle quelque chose sur lui, une pastille « Nouveau » vous le signale.",
+      body: "L'étoile garde un personnage en haut de la liste. Le crochet replie un personnage que vous connaissez déjà, pour alléger la liste. Si un nouveau tome révèle quelque chose sur lui, une pastille « Nouveau » vous le signale. Sur un écran tactile, glissez le personnage vers la gauche pour accéder à ces deux actions, ou jusqu'au bout pour le marquer comme connu.",
     },
     {
       title: "Langue et édition",
@@ -120,7 +120,7 @@ const en: Strings = {
     },
     {
       title: "Pin and “I know who this is”",
-      body: "The star keeps a character at the top of the list. The check mark collapses a character you already know, to lighten the list. If a new book reveals something about them, a “New” badge tells you.",
+      body: "The star keeps a character at the top of the list. The check mark collapses a character you already know, to lighten the list. If a new book reveals something about them, a “New” badge tells you. On a touch screen, swipe the character to the left for both actions, or all the way to mark them as known.",
     },
     {
       title: "Language and edition",

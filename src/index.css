@@ -209,3 +209,13 @@ main { margin-top: 12px; }
 .swipe-btn span { font-size: 18px; line-height: 1; }
 .swipe-btn.accent { color: var(--bg); background: var(--accent); }
 .swipe-actions.full .swipe-btn.accent { flex-basis: 100%; align-items: flex-start; padding-left: 20px; }
+
+/* Touch screens use swipe actions: the buttons stay hidden there. */
+@media (pointer: coarse) {
+  .actions { display: none; }
+}
+/* With a mouse, the buttons appear when hovering a row (active ones always show). */
+@media (hover: hover) and (pointer: fine) {
+  .act { opacity: 0; transition: opacity 0.12s; }
+  .act.on, .row:hover .act, .act:focus-visible { opacity: 1; }
+}
