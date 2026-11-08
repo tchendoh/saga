@@ -1,0 +1,16 @@
+id: sevro
+introduced: rr
+names:
+  - value: Sevro au Barca
+    since: rr
+aliases:
+  - value: Goblin
+    since: rr
+colors:
+  - value: gold
+    since: rr
+facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut, petit, sauvage et imprévisible.
+      en: Institute student, small, feral and unpredictable.

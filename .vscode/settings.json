@@ -1,0 +1,22 @@
+{
+  // Saga: Red Rising palette (deep red + gold), window chrome only.
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#7a1414",
+    "titleBar.activeForeground": "#f5d77a",
+    "titleBar.inactiveBackground": "#4a0d0d",
+    "titleBar.inactiveForeground": "#c9a94f",
+    "activityBar.background": "#5c0f0f",
+    "activityBar.foreground": "#f5d77a",
+    "activityBar.inactiveForeground": "#c98a8a",
+    "activityBarBadge.background": "#d4a017",
+    "activityBarBadge.foreground": "#2a0505",
+    "statusBar.background": "#7a1414",
+    "statusBar.foreground": "#f5d77a",
+    "statusBar.debuggingBackground": "#d4a017",
+    "statusBar.debuggingForeground": "#2a0505",
+    "statusBarItem.remoteBackground": "#d4a017",
+    "statusBarItem.remoteForeground": "#2a0505",
+    "tab.activeBorderTop": "#d4a017",
+    "focusBorder": "#d4a017"
+  }
+}

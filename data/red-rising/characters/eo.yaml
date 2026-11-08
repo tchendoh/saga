@@ -1,0 +1,18 @@
+id: eo
+introduced: rr
+names:
+  - value: { en: Eo of Lykos, fr: Eo de Lykos }
+    since: rr
+colors:
+  - value: red
+    since: rr
+facts:
+  - since: rr
+    value:
+      fr: Épouse de Darrow, qui rêve d'une vie meilleure pour les siens.
+      en: Darrow's wife, who dreams of a better life for her people.
+death:
+  since: gs
+  value:
+    fr: Exécutée à Lykos. Sa mort pousse Darrow à agir.
+    en: Executed in Lykos. Her death sets Darrow in motion.

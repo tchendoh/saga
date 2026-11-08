@@ -1,0 +1,23 @@
+# Red Rising saga by Pierce Brown.
+# TODO: verify every French-edition value (titles, color names) against the French books.
+id: red-rising
+title: Red Rising
+author: Pierce Brown
+books:
+  - id: rr
+    title: Red Rising
+  - id: gs
+    title: Golden Son
+  - id: ms
+    title: Morning Star
+  - id: ig
+    title: Iron Gold
+  - id: da
+    title: Dark Age
+  - id: lb
+    title: Light Bringer
+colors:
+  - id: red
+    name: { en: Red, fr: Rouge }
+  - id: gold
+    name: { en: Gold, fr: Or }

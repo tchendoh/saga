@@ -1,0 +1,20 @@
+id: darrow
+introduced: rr
+names:
+  - value: { en: Darrow of Lykos, fr: Darrow de Lykos }
+    since: rr
+  - value: Darrow au Andromedus
+    since: gs
+colors:
+  - value: red
+    since: rr
+  - value: gold
+    since: gs
+aliases:
+  - value: { en: The Reaper, fr: le Faucheur }
+    since: gs
+facts:
+  - since: rr
+    value:
+      fr: Jeune mineur de la colonie de Lykos, sur Mars. Narrateur de la série.
+      en: Young miner from the Lykos colony on Mars. Narrator of the series.
