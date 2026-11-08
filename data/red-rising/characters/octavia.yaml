@@ -1,0 +1,27 @@
+id: octavia
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Octavia au Lune"
+    since: gs
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: lune
+    since: gs
+allegiances:
+  - value: society
+    since: da
+# TODO: this death is probably revealed in an earlier book; move "since" to the book after the one where it happens.
+death:
+  since: da
+  value:
+    fr: "Mort."
+    en: "Dead."
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Sovereign régnante de la Society.
+# ms: Sovereign régnante de la Society.
+# da: Ancienne Sovereign de la Society, grand-mère de Lysander.
+#   death: Tuée par Darrow

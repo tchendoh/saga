@@ -1,0 +1,16 @@
+id: publius
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Publius cu Caraval"
+    since: ig
+colors:
+  - value: copper
+    since: ig
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Le Copper Tribune, chef du Copper bloc.
+# da: Tribun du Copper bloc, sénateur.

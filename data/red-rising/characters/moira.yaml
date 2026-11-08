@@ -1,0 +1,26 @@
+id: moira
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Moira au Grimmus"
+    since: gs
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: grimmus
+    since: gs
+allegiances:
+  - value: society
+    since: da
+# TODO: this death is probably revealed in an earlier book; move "since" to the book after the one where it happens.
+death:
+  since: da
+  value:
+    fr: "Mort."
+    en: "Dead."
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Politico en chef de la Sovereign.
+# da: Fille du Ash Lord Magnus au Grimmus.
+#   death: Tuée par Darrow

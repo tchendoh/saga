@@ -1,0 +1,20 @@
+id: regulus
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Regulus ag Sun"
+    since: ms
+aliases:
+  - value: "Quicksilver"
+    since: ms
+colors:
+  - value: silver
+    since: ms
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Homme le plus riche de la Society.
+# ig: Homme le plus riche de la Republic.
+# da: Homme le plus riche de la Republic, à la tête de Sun Industries.

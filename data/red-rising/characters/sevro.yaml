@@ -9,6 +9,10 @@ aliases:
 colors:
   - value: gold
     since: rr
+gender: m
+houses:
+  - value: barca
+    since: rr
 facts:
   - since: rr
     value:

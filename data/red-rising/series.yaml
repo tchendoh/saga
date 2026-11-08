@@ -31,3 +31,35 @@ colors:
   - { id: brown, hex: "#8d6748", name: { en: Brown, fr: Brun } }
   - { id: violet, hex: "#a371f7", name: { en: Violet, fr: Violet } }
   - { id: yellow, hex: "#e3b341", name: { en: Yellow, fr: Jaune } }
+  - { id: unknown, hex: "#8b949e", name: { en: Unknown, fr: Inconnue } }
+houses:
+  - { id: andromedus, name: Andromedus }
+  - { id: arcos, name: Arcos }
+  - { id: augustus, name: Augustus }
+  - { id: barca, name: Barca }
+  - { id: bellona, name: Bellona }
+  - { id: carthii, name: Carthii }
+  - { id: cern, name: Cern }
+  - { id: daan, name: Daan }
+  - { id: fabii, name: Fabii }
+  - { id: faran, name: Faran }
+  - { id: grimmus, name: Grimmus }
+  - { id: julii, name: Julii }
+  - { id: lune, name: Lune }
+  - { id: lux, name: Lux }
+  - { id: raa, name: Raa }
+  - { id: rath, name: Rath }
+  - { id: san, name: San }
+  - { id: sarna, name: Sarna }
+  - { id: severus-julii, name: Severus-Julii }
+  - { id: tanus, name: Tanus }
+  - { id: telemanus, name: Telemanus }
+  - { id: valii-rath, name: Valii-Rath }
+  - { id: velocitor, name: Velocitor }
+  - { id: votum, name: Votum }
+allegiances:
+  # TODO: verify French-edition names.
+  - { id: sons-of-ares, name: { en: Sons of Ares, fr: Fils d'Arès } }
+  - { id: society, name: { en: The Society, fr: La Société } }
+  - { id: republic, name: { en: The Solar Republic, fr: La République solaire } }
+  - { id: rim-dominion, name: { en: The Rim Dominion, fr: Le Dominion de la Bordure } }

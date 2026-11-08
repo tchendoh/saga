@@ -1,0 +1,12 @@
+id: vandros
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Vandros"
+    since: ig
+colors:
+  - value: gold
+    since: ig
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Howler.

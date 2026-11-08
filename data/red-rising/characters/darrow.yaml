@@ -13,6 +13,16 @@ colors:
 aliases:
   - value: { en: The Reaper, fr: le Faucheur }
     since: gs
+gender: m
+houses:
+  - value: andromedus
+    since: gs
+allegiances:
+  - value: sons-of-ares
+    since: gs
+relations:
+  - value: { type: spouse, target: eo }
+    since: rr
 roles:
   - value: protagonist
     since: rr

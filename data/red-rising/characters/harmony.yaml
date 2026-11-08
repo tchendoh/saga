@@ -1,0 +1,16 @@
+id: harmony
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Harmony"
+    since: gs
+colors:
+  - value: red
+    since: gs
+allegiances:
+  - value: sons-of-ares
+    since: gs
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Lieutenante de Dancer.
+# da: Cheffe de la Red Hand, ancienne lieutenante des Sons of Ares.

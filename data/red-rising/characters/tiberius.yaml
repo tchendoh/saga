@@ -1,0 +1,15 @@
+id: tiberius
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Tiberius au Bellona"
+    since: gs
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: bellona
+    since: gs
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Chef de House Bellona.

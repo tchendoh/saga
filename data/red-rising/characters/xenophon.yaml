@@ -1,0 +1,12 @@
+id: xenophon
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Xenophon"
+    since: da
+colors:
+  - value: white
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Conseiller de Sefi, un logos.

@@ -1,0 +1,15 @@
+id: colloway
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Colloway xe Char"
+    since: da
+colors:
+  - value: blue
+    since: da
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Pilote, as en titre de la marine de la Republic, Howler.

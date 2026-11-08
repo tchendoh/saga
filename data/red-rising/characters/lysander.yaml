@@ -1,0 +1,21 @@
+id: lysander
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Lysander au Lune"
+    since: gs
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: lune
+    since: gs
+allegiances:
+  - value: society
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Petit-fils d'Octavia, héritier de House Lune.
+# ms: Petit-fils d'Octavia, héritier de House Lune.
+# ig: Petit-fils de l'ancienne Sovereign Octavia, héritier de House Lune.
+# da: Petit-fils de l'ancienne Sovereign Octavia, héritier de House Lune, ancien patron de House Grimmus.

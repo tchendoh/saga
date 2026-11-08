@@ -1,0 +1,12 @@
+id: cyra
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Cyra si Lamensis"
+    since: ig
+colors:
+  - value: green
+    since: ig
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Serrurière, collègue d'Ephraim.

@@ -1,0 +1,16 @@
+id: pliny
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Pliny au Velocitor"
+    since: gs
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: velocitor
+    since: gs
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Politico en chef de House Augustus.
+#   links: Augustus Politico

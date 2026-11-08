@@ -1,0 +1,16 @@
+id: rhonna
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Rhonna"
+    since: ig
+colors:
+  - value: red
+    since: ig
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Nièce de Darrow.
+# da: Nièce de Darrow, fille de Kieran, lancière, Pup Two.

@@ -1,0 +1,19 @@
+id: pax
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Pax"
+    since: ig
+colors:
+  - value: gold
+    since: ig
+houses:
+  - value: augustus
+    since: ig
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Fils de Darrow et de Virginia.
+# da: Fils de Darrow et de Virginia.

@@ -1,0 +1,23 @@
+id: dancer
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Dancer"
+    since: gs
+aliases:
+  - value: "Senator O'Faran"
+    since: ig
+colors:
+  - value: red
+    since: gs
+allegiances:
+  - value: sons-of-ares
+    since: gs
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Lieutenant d'Ares.
+# ms: Lieutenant d'Ares.
+# ig: Sénateur de la Republic, lieutenant d'Ares.
+# da: Sénateur, ancien lieutenant des Sons of Ares, tribun du Red bloc.

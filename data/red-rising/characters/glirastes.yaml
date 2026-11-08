@@ -1,0 +1,18 @@
+id: glirastes
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Glirastes"
+    since: da
+aliases:
+  - value: "The Master Maker"
+    since: da
+colors:
+  - value: orange
+    since: da
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Architecte et inventeur.

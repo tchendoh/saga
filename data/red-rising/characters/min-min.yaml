@@ -1,0 +1,16 @@
+id: min-min
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Min-Min"
+    since: da
+colors:
+  - value: red
+    since: da
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Howler, tireuse d'élite et experte en munitions, cliente de House Barca.
+#   links: Barca cliente

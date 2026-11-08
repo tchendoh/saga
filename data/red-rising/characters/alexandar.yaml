@@ -1,0 +1,20 @@
+id: alexandar
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Alexandar au Arcos"
+    since: ig
+colors:
+  - value: gold
+    since: ig
+houses:
+  - value: arcos
+    since: ig
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Petit-fils aîné de Lorn, Howler.
+# da: Petit-fils aîné de Lorn au Arcos, héritier de House Arcos, allié de House Augustus, lancier, Pup One.
+#   links: Augustus allié

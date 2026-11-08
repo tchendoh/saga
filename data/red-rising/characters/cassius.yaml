@@ -1,0 +1,20 @@
+id: cassius
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Cassius au Bellona"
+    since: gs
+aliases:
+  - value: "The Morning Knight"
+    since: ms
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: bellona
+    since: gs
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Héritier de House Bellona, fils de Tiberius, lancier de House Bellona.
+# ms: Garde du corps de la Sovereign.
+# ig: Ancien Morning Knight, tuteur de Lysander.

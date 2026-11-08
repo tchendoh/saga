@@ -1,0 +1,19 @@
+id: apollonius
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Apollonius au Valii-Rath"
+    since: ig
+aliases:
+  - value: "The Minotaur"
+    since: ig
+colors:
+  - value: gold
+    since: ig
+houses:
+  - value: valii-rath
+    since: ig
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Héritier de House Valii-Rath.
+# da: Héritier de House Valii-Rath, verbeux.

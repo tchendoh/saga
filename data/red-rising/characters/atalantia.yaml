@@ -1,0 +1,20 @@
+id: atalantia
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Atalantia au Grimmus"
+    since: ig
+colors:
+  - value: gold
+    since: ig
+houses:
+  - value: grimmus
+    since: ig
+allegiances:
+  - value: society
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Fille du Ash Lord.
+# da: Dictator de la Society, fille du Ash Lord Magnus au Grimmus, sœur d'Aja et de Moira, ancienne cliente de House Lune.
+#   links: Lune ancienne cliente

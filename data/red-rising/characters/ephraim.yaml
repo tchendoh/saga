@@ -1,0 +1,13 @@
+id: ephraim
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Ephraim ti Horn"
+    since: ig
+colors:
+  - value: gray
+    since: ig
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Mercenaire, ancien membre des Sons of Ares.
+# da: Mercenaire, ancien membre des Sons of Ares, époux de Trigg ti Nakamura.

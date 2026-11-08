@@ -1,0 +1,23 @@
+id: ragnar
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Ragnar Volarus"
+    since: ms
+colors:
+  - value: obsidian
+    since: ms
+allegiances:
+  - value: sons-of-ares
+    since: ms
+# TODO: this death is probably revealed in an earlier book; move "since" to the book after the one where it happens.
+death:
+  since: da
+  value:
+    fr: "Mort."
+    en: "Dead."
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Nouveau Howler.
+# da: Ancien chef des Obsidian, Howler.
+#   death: Tué par Aja

@@ -1,0 +1,26 @@
+id: fitchner
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Fitchner au Barca"
+    since: gs
+aliases:
+  - value: "Ares"
+    since: da
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: barca
+    since: gs
+# TODO: this death is probably revealed in an earlier book; move "since" to the book after the one where it happens.
+death:
+  since: da
+  value:
+    fr: "Mort."
+    en: "Dead."
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Ancien Proctor de Mars, père de Sevro.
+# da: Ancien chef des Sons of Ares.
+#   death: Tué par Cassius au Bellona

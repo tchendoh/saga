@@ -1,0 +1,26 @@
+id: victra
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Victra au Julii"
+    since: gs
+  - value: "Victra au Barca"
+    since: ig
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: julii
+    since: gs
+  - value: barca
+    since: ig
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Lancière de House Augustus, demi-sœur d'Antonia, fille d'Agrippina.
+#   links: Augustus lancière
+# ms: Demi-sœur d'Antonia, fille d'Agrippina.
+# ig: Épouse de Sevro, née Victra au Julii.
+# da: Épouse de Sevro, née Victra au Julii.

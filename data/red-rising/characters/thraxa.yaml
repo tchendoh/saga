@@ -1,0 +1,19 @@
+id: thraxa
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Thraxa au Telemanus"
+    since: ig
+colors:
+  - value: gold
+    since: ig
+houses:
+  - value: telemanus
+    since: ig
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Fille de Kavax et de Niobe.
+# da: Praetor des Free Legions, fille de Kavax et de Niobe, Howler.

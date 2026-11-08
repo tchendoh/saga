@@ -1,0 +1,23 @@
+id: kavax
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Kavax au Telemanus"
+    since: gs
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: telemanus
+    since: gs
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Chef de House Telemanus, allié de House Augustus, père de Daxo et de Pax.
+#   links: Augustus allié
+# ms: Chef de House Telemanus, père de Daxo.
+# ig: Chef de House Telemanus, père de Daxo.
+# da: Primus de House Telemanus, client de House Augustus.
+#   links: Augustus client

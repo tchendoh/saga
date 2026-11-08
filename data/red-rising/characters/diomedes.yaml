@@ -1,0 +1,22 @@
+id: diomedes
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ig
+names:
+  - value: "Diomedes au Raa"
+    since: ig
+aliases:
+  - value: "The Storm Knight"
+    since: ig
+colors:
+  - value: gold
+    since: ig
+houses:
+  - value: raa
+    since: ig
+allegiances:
+  - value: rim-dominion
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ig: Fils de Romulus et de Dido.
+# da: Fils de Romulus et de Dido, Taxiarchos de la Lightning Phalanx.

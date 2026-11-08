@@ -1,0 +1,18 @@
+id: seneca
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Seneca au Cern"
+    since: da
+colors:
+  - value: gold
+    since: da
+houses:
+  - value: cern
+    since: da
+allegiances:
+  - value: society
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Dux d'Ajax, centurion des Iron Leopards.

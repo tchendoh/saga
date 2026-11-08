@@ -1,0 +1,30 @@
+id: romulus
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Romulus au Raa"
+    since: ms
+aliases:
+  - value: "The Lord of the Dust"
+    since: ig
+colors:
+  - value: gold
+    since: ms
+houses:
+  - value: raa
+    since: ms
+allegiances:
+  - value: rim-dominion
+    since: da
+# TODO: this death is probably revealed in an earlier book; move "since" to the book after the one where it happens.
+death:
+  since: da
+  value:
+    fr: "Mort."
+    en: "Dead."
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Chef de House Raa, ArchGovernor d'Io.
+# ig: Chef de House Raa, Sovereign du Rim Dominion.
+# da: Ancien Primus de House Raa, ancien Sovereign du Rim Dominion.
+#   death: Suicide rituel

@@ -1,0 +1,18 @@
+id: cyriana
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Cyriana au Tanus"
+    since: ms
+aliases:
+  - value: "Thistle"
+    since: ms
+colors:
+  - value: gold
+    since: ms
+houses:
+  - value: tanus
+    since: ms
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Ancienne Howler, maintenant lieutenante des Boneriders.

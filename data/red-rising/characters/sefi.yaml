@@ -1,0 +1,18 @@
+id: sefi
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Sefi the Quiet"
+    since: ms
+  - value: "Sefi"
+    since: ig
+  - value: "Sefi the Quiet"
+    since: da
+colors:
+  - value: obsidian
+    since: ms
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Cheffe de guerre des Valkyrie, fille d'Alia, sœur de Ragnar.
+# ig: Reine des Valkyrie, sœur de Ragnar.
+# da: Reine des Obsidian, cheffe des Valkyrie, sœur de Ragnar Volarus.

@@ -1,0 +1,15 @@
+id: lilath
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Lilath au Faran"
+    since: ms
+colors:
+  - value: gold
+    since: ms
+houses:
+  - value: faran
+    since: ms
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Compagne du Jackal, cheffe des Boneriders.

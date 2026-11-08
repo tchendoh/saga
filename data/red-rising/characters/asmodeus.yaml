@@ -1,0 +1,18 @@
+id: asmodeus
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Asmodeus au Carthii"
+    since: da
+colors:
+  - value: gold
+    since: da
+houses:
+  - value: carthii
+    since: da
+allegiances:
+  - value: society
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Primus de House Carthii, constructeurs de vaisseaux de Venus.

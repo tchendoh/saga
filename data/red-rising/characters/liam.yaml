@@ -1,0 +1,13 @@
+id: liam
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Liam"
+    since: da
+colors:
+  - value: red
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Neveu de Lyria, client de House Telemanus.
+#   links: Telemanus client

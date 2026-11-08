@@ -6,6 +6,10 @@ names:
 colors:
   - value: red
     since: rr
+gender: f
+relations:
+  - value: { type: spouse, target: darrow }
+    since: rr
 facts:
   - since: rr
     value:

@@ -1,0 +1,16 @@
+id: theodora
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Theodora"
+    since: da
+colors:
+  - value: pink
+    since: da
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Cheffe des agents Splinter, cliente de House Augustus.
+#   links: Augustus cliente

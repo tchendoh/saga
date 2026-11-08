@@ -1,0 +1,16 @@
+id: orion
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Orion xe Aquarii"
+    since: ms
+colors:
+  - value: blue
+    since: ms
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Capitaine de vaisseau.
+# da: Navarch de la Republic, Imperator de la White Fleet.

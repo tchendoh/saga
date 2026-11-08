@@ -1,0 +1,12 @@
+id: trigg
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Trigg ti Nakamura"
+    since: ms
+colors:
+  - value: gray
+    since: ms
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Légionnaire, frère de Holiday.

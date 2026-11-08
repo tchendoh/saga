@@ -1,0 +1,24 @@
+id: virginia
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: gs
+names:
+  - value: "Virginia au Augustus"
+    since: gs
+aliases:
+  - value: "Mustang"
+    since: gs
+colors:
+  - value: gold
+    since: gs
+houses:
+  - value: augustus
+    since: gs
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# gs: Fille de Nero, sœur jumelle d'Adrius.
+# ms: Sœur jumelle d'Adrius.
+# ig: Sovereign régnante de la Republic, épouse de Darrow, mère de Pax.
+# da: Sovereign régnante de la Republic, épouse de Darrow, Primus de House Augustus, sœur du Jackal of Mars.

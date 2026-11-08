@@ -1,0 +1,18 @@
+id: holiday
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: ms
+names:
+  - value: "Holiday ti Nakamura"
+    since: ms
+colors:
+  - value: gray
+    since: ms
+allegiances:
+  - value: republic
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# ms: Légionnaire, sœur de Trigg.
+# ig: Légionnaire, sœur de Trigg.
+# da: Dux de la Lionguard de Virginia, sœur de Trigg, cliente de House Augustus, centurionne de la Pegasus Legion.
+#   links: Augustus cliente

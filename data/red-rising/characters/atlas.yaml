@@ -1,0 +1,22 @@
+id: atlas
+# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
+introduced: da
+names:
+  - value: "Atlas au Raa"
+    since: da
+aliases:
+  - value: "The Fear Knight"
+    since: da
+colors:
+  - value: gold
+    since: da
+houses:
+  - value: raa
+    since: da
+allegiances:
+  - value: society
+    since: da
+
+# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+# da: Frère de Romulus au Raa, Legate de la Zero Legion (les Gorgons), ancien pupille de House Lune, client de House Grimmus.
+#   links: Grimmus client, Lune ancien pupille
