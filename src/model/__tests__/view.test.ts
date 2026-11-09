@@ -122,3 +122,30 @@ describe("hasNewInfo", () => {
     expect(hasNewInfo(series, hero, 1, 1)).toBe(false);
   });
 });
+
+describe("draft facts", () => {
+  const drafted = Character.parse({
+    id: "drafted",
+    introduced: "one",
+    names: [{ value: "Drafted", since: "one" }],
+    colors: [{ value: "red", since: "one" }],
+    facts: [
+      { since: "one", value: { fr: "Fait réécrit.", en: "Rewritten fact." } },
+      { since: "one", value: { fr: "Ancienne description 1." }, draft: true },
+      { since: "two", value: { fr: "Ancienne description 2." }, draft: true },
+    ],
+  });
+
+  it("shows rewritten facts and only the latest visible draft", () => {
+    expect(viewCharacter(series, drafted, 0, "en", "fr")!.facts).toEqual(["Fait réécrit.", "Ancienne description 1."]);
+    expect(viewCharacter(series, drafted, 1, "en", "fr")!.facts).toEqual(["Fait réécrit.", "Ancienne description 2."]);
+  });
+
+  it("falls back to the other language for a draft", () => {
+    expect(viewCharacter(series, drafted, 0, "en", "en")!.facts).toEqual(["Rewritten fact.", "Ancienne description 1."]);
+  });
+
+  it("rejects a non-draft fact in one language only", () => {
+    expect(() => Character.parse({ ...drafted, facts: [{ since: "one", value: { fr: "x" } }] })).toThrow();
+  });
+});

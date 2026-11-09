@@ -25,6 +25,15 @@ export type CharacterView = {
 
 type Dated<T> = { value: T; since: string };
 
+/**
+ * Rewritten facts accumulate; draft facts are snapshots of the character at each book,
+ * so only the latest visible draft is shown.
+ */
+function visibleFacts<T extends { draft?: boolean }>(facts: T[]): T[] {
+  const latestDraft = facts.filter((f) => f.draft).at(-1);
+  return facts.filter((f) => !f.draft || f === latestDraft);
+}
+
 /** Lowercase, without accents, for tolerant comparisons ("Éo" matches "eo"). */
 export function normalize(text: string): string {
   return text.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().trim();
@@ -81,7 +90,7 @@ export function viewCharacter(
     aliases: aliases.map((alias) => inEdition(alias.value, edition)),
     color: { id: color.id, name: inEdition(color.name, edition), hex: color.hex, particle: color.particle && inEdition(color.particle, edition) },
     roles: [...new Set(visible(character.roles).map((r) => r.value))],
-    facts: visible(character.facts).map((fact) => fact.value[language]),
+    facts: visibleFacts(visible(character.facts)).map((fact) => fact.value[language] ?? fact.value.fr ?? fact.value.en ?? ""),
     death,
     searchKeys: [...names, ...aliases].flatMap((entry) => allEditions(entry.value)).map(normalize),
   };

@@ -71,6 +71,19 @@ export type Gender = z.infer<typeof Gender>;
 /** Wraps a value with the book from which the reader knows it. */
 const dated = <T extends z.ZodType>(value: T) => z.object({ value, since: BookId });
 
+/** Text in one or both interface languages (drafts may have only one). */
+const PartialText = z
+  .object({ fr: z.string().min(1).optional(), en: z.string().min(1).optional() })
+  .refine((t) => t.fr || t.en, "needs at least one language");
+
+/**
+ * A dated fact. A draft ("à réécrire") is temporary text that must be rewritten
+ * before the site is public; it may exist in one language only.
+ */
+const Fact = dated(PartialText)
+  .extend({ draft: z.boolean().optional() })
+  .refine((f) => f.draft || (f.value.fr && f.value.en), "a fact needs fr and en unless it is a draft");
+
 export const Character = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   /** Book where the character first appears. */
@@ -85,7 +98,7 @@ export const Character = z.object({
   /** Rank, function or title as written in the books (e.g. Lancer). */
   titles: z.array(dated(EditionText)).default([]),
   relations: z.array(dated(z.object({ type: RelationType, target: z.string() }))).default([]),
-  facts: z.array(dated(LocalizedText)).default([]),
+  facts: z.array(Fact).default([]),
   death: dated(LocalizedText).optional(),
 });
 export type Character = z.infer<typeof Character>;
