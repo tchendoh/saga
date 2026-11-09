@@ -53,7 +53,8 @@ export function viewCharacter(
   all: Character[] = [],
 ): CharacterView | null {
   if (!isVisible(series, character.introduced, position)) return null;
-  const visible = <T>(entries: Dated<T>[]) => entries.filter((entry) => isVisible(series, entry.since, position));
+  // Generic over the whole entry, so extra fields (like a fact's `draft`) keep their type.
+  const visible = <E extends { since: string }>(entries: E[]) => entries.filter((entry) => isVisible(series, entry.since, position));
 
   const names = visible(character.names);
   const aliases = visible(character.aliases);
