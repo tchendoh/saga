@@ -20,10 +20,20 @@ allegiances:
 death:
   since: da
   value:
-    fr: "Mort."
+    fr: "Tuée par Sevro"
     en: "Dead."
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Garde du corps en chef de la Sovereign."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Fille du Ash Lord Magnus au Grimmus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Garde du corps en chef de la Sovereign.
 # ms: Garde du corps en chef de la Sovereign.
 # da: Fille du Ash Lord Magnus au Grimmus.

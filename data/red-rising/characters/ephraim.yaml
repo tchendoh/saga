@@ -8,6 +8,16 @@ colors:
   - value: gray
     since: ig
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Mercenaire, ancien membre des Sons of Ares."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Mercenaire, ancien membre des Sons of Ares, époux de Trigg ti Nakamura."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Mercenaire, ancien membre des Sons of Ares.
 # da: Mercenaire, ancien membre des Sons of Ares, époux de Trigg ti Nakamura.

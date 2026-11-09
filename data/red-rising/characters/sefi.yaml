@@ -12,7 +12,21 @@ colors:
   - value: obsidian
     since: ms
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Cheffe de guerre des Valkyrie, fille d'Alia, sœur de Ragnar."
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Reine des Valkyrie, sœur de Ragnar."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Reine des Obsidian, cheffe des Valkyrie, sœur de Ragnar Volarus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Cheffe de guerre des Valkyrie, fille d'Alia, sœur de Ragnar.
 # ig: Reine des Valkyrie, sœur de Ragnar.
 # da: Reine des Obsidian, cheffe des Valkyrie, sœur de Ragnar Volarus.

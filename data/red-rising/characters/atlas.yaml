@@ -17,6 +17,12 @@ allegiances:
   - value: society
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Frère de Romulus au Raa, Legate de la Zero Legion (les Gorgons), ancien pupille de House Lune, client de House Grimmus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Frère de Romulus au Raa, Legate de la Zero Legion (les Gorgons), ancien pupille de House Lune, client de House Grimmus.
 #   links: Grimmus client, Lune ancien pupille

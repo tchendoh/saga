@@ -14,5 +14,11 @@ allegiances:
   - value: society
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Mère de Cassius, dont elle est éloignée, ennemie de Darrow, Primus de ce qui reste de House Bellona."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Mère de Cassius, dont elle est éloignée, ennemie de Darrow, Primus de ce qui reste de House Bellona.

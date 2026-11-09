@@ -33,3 +33,25 @@ facts:
     value:
       fr: Jeune mineur de la colonie de Lykos, sur Mars. Narrateur de la série.
       en: Young miner from the Lykos colony on Mars. Narrator of the series.
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "ArchPrimus de l'Institute of Mars, lancier de House Augustus."
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Ancien lancier de House Augustus."
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "ArchImperator de la Republic, époux de Virginia."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Ancien ArchImperator de la Republic, époux de Virginia."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
+# gs: ArchPrimus de l'Institute of Mars, lancier de House Augustus.
+# ms: Ancien lancier de House Augustus.
+# ig: ArchImperator de la Republic, époux de Virginia.
+# da: Ancien ArchImperator de la Republic, époux de Virginia.

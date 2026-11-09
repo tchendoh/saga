@@ -11,5 +11,11 @@ allegiances:
   - value: society
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "SubPraetor Lunese, ancien second officier de la garde prétorienne XIII Dracones sous Aja."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: SubPraetor Lunese, ancien second officier de la garde prétorienne XIII Dracones sous Aja.

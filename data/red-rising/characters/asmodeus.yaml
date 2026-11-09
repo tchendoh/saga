@@ -14,5 +14,11 @@ allegiances:
   - value: society
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Primus de House Carthii, constructeurs de vaisseaux de Venus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Primus de House Carthii, constructeurs de vaisseaux de Venus.

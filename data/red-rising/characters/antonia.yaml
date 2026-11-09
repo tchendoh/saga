@@ -11,6 +11,16 @@ houses:
   - value: severus-julii
     since: gs
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Ancienne de House Mars, demi-sœur de Victra, fille d'Agrippina."
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Demi-sœur de Victra, fille d'Agrippina."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Ancienne de House Mars, demi-sœur de Victra, fille d'Agrippina.
 # ms: Demi-sœur de Victra, fille d'Agrippina.

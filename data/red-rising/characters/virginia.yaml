@@ -16,7 +16,25 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Fille de Nero, sœur jumelle d'Adrius."
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Sœur jumelle d'Adrius."
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Sovereign régnante de la Republic, épouse de Darrow, mère de Pax."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Sovereign régnante de la Republic, épouse de Darrow, Primus de House Augustus, sœur du Jackal of Mars."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Fille de Nero, sœur jumelle d'Adrius.
 # ms: Sœur jumelle d'Adrius.
 # ig: Sovereign régnante de la Republic, épouse de Darrow, mère de Pax.

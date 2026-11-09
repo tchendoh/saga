@@ -15,7 +15,21 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Lieutenant d'Ares."
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Sénateur de la Republic, lieutenant d'Ares."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Sénateur, ancien lieutenant des Sons of Ares, tribun du Red bloc."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Lieutenant d'Ares.
 # ms: Lieutenant d'Ares.
 # ig: Sénateur de la Republic, lieutenant d'Ares.

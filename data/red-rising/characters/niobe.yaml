@@ -14,7 +14,17 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Épouse de Kavax."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Épouse de Kavax, cliente de House Augustus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Épouse de Kavax.
 # da: Épouse de Kavax, cliente de House Augustus.
 #   links: Augustus client

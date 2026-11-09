@@ -8,7 +8,17 @@ colors:
   - value: red
     since: ig
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Une Red Gamma."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Gamma de Mars, cliente de House Telemanus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Une Red Gamma.
 # da: Gamma de Mars, cliente de House Telemanus.
 #   links: Telemanus cliente

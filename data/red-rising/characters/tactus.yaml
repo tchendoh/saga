@@ -10,6 +10,12 @@ houses:
   - value: rath
     since: rr
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Lancier de House Augustus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Lancier de House Augustus.
 #   links: Augustus lancier

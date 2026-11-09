@@ -8,5 +8,11 @@ colors:
   - value: gray
     since: ms
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Légionnaire, frère de Holiday."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Légionnaire, frère de Holiday.

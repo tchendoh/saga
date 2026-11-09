@@ -8,5 +8,11 @@ colors:
   - value: green
     since: ig
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Serrurière, collègue d'Ephraim."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Serrurière, collègue d'Ephraim.

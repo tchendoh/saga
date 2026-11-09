@@ -8,5 +8,11 @@ colors:
   - value: pink
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Agent du Syndicate, maître voleur."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Agent du Syndicate, maître voleur.

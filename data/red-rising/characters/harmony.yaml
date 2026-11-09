@@ -10,6 +10,16 @@ allegiances:
   - value: sons-of-ares
     since: gs
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Lieutenante de Dancer."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Cheffe de la Red Hand, ancienne lieutenante des Sons of Ares."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Lieutenante de Dancer.
 # da: Cheffe de la Red Hand, ancienne lieutenante des Sons of Ares.

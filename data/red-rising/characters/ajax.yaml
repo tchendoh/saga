@@ -17,5 +17,11 @@ allegiances:
   - value: society
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Fils d'Aja au Grimmus et d'Atlas au Raa, héritier de House Grimmus, Legate des Iron Leopards."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Fils d'Aja au Grimmus et d'Atlas au Raa, héritier de House Grimmus, Legate des Iron Leopards.

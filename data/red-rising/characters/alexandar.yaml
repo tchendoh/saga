@@ -14,7 +14,17 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Petit-fils aîné de Lorn, Howler."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Petit-fils aîné de Lorn au Arcos, héritier de House Arcos, allié de House Augustus, lancier, Pup One."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Petit-fils aîné de Lorn, Howler.
 # da: Petit-fils aîné de Lorn au Arcos, héritier de House Arcos, allié de House Augustus, lancier, Pup One.
 #   links: Augustus allié

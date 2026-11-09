@@ -14,7 +14,17 @@ allegiances:
   - value: society
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Fille du Ash Lord."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Dictator de la Society, fille du Ash Lord Magnus au Grimmus, sœur d'Aja et de Moira, ancienne cliente de House Lune."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Fille du Ash Lord.
 # da: Dictator de la Society, fille du Ash Lord Magnus au Grimmus, sœur d'Aja et de Moira, ancienne cliente de House Lune.
 #   links: Lune ancienne cliente

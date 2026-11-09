@@ -17,6 +17,12 @@ allegiances:
   - value: society
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Olympic Knight, tante d'Alexandar au Arcos, cliente de House Grimmus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Olympic Knight, tante d'Alexandar au Arcos, cliente de House Grimmus.
 #   links: Grimmus cliente

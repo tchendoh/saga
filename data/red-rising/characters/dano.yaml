@@ -8,5 +8,11 @@ colors:
   - value: red
     since: ig
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Collègue d'Ephraim."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Collègue d'Ephraim.

@@ -8,5 +8,11 @@ colors:
   - value: obsidian
     since: ms
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Reine des Valkyrie, mère de Ragnar et de Sefi."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Reine des Valkyrie, mère de Ragnar et de Sefi.

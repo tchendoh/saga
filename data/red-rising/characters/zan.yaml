@@ -11,5 +11,11 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "ArchImperator de la Republic après la destitution de Darrow, commandante de la flotte de défense de Luna."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: ArchImperator de la Republic après la destitution de Darrow, commandante de la flotte de défense de Luna.

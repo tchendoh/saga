@@ -20,10 +20,24 @@ allegiances:
 death:
   since: da
   value:
-    fr: "Mort."
+    fr: "Tué par les Howlers et Apollonius au Valii-Rath"
     en: "Dead."
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "ArchImperator de la Sovereign, père d'Aja."
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Ancien ArchImperator d'Octavia."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Ancien ArchImperator d'Octavia au Lune, l'incendiaire de Rhea."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: ArchImperator de la Sovereign, père d'Aja.
 # ig: Ancien ArchImperator d'Octavia.
 # da: Ancien ArchImperator d'Octavia au Lune, l'incendiaire de Rhea.

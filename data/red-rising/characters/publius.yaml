@@ -11,6 +11,16 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Le Copper Tribune, chef du Copper bloc."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Tribun du Copper bloc, sénateur."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Le Copper Tribune, chef du Copper bloc.
 # da: Tribun du Copper bloc, sénateur.

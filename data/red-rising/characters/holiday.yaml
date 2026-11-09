@@ -11,7 +11,17 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Légionnaire, sœur de Trigg."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Dux de la Lionguard de Virginia, sœur de Trigg, cliente de House Augustus, centurionne de la Pegasus Legion."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Légionnaire, sœur de Trigg.
 # ig: Légionnaire, sœur de Trigg.
 # da: Dux de la Lionguard de Virginia, sœur de Trigg, cliente de House Augustus, centurionne de la Pegasus Legion.

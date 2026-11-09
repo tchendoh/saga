@@ -8,6 +8,12 @@ colors:
   - value: red
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Neveu de Lyria, client de House Telemanus."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Neveu de Lyria, client de House Telemanus.
 #   links: Telemanus client

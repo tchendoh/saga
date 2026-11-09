@@ -13,7 +13,21 @@ houses:
   - value: bellona
     since: rr
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Héritier de House Bellona, fils de Tiberius, lancier de House Bellona."
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Garde du corps de la Sovereign."
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Ancien Morning Knight, tuteur de Lysander."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Héritier de House Bellona, fils de Tiberius, lancier de House Bellona.
 # ms: Garde du corps de la Sovereign.
 # ig: Ancien Morning Knight, tuteur de Lysander.

@@ -20,10 +20,24 @@ allegiances:
 death:
   since: da
   value:
-    fr: "Mort."
+    fr: "Suicide rituel"
     en: "Dead."
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Chef de House Raa, ArchGovernor d'Io."
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Chef de House Raa, Sovereign du Rim Dominion."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Ancien Primus de House Raa, ancien Sovereign du Rim Dominion."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Chef de House Raa, ArchGovernor d'Io.
 # ig: Chef de House Raa, Sovereign du Rim Dominion.
 # da: Ancien Primus de House Raa, ancien Sovereign du Rim Dominion.

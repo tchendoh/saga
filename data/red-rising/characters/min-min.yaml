@@ -11,6 +11,12 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Howler, tireuse d'élite et experte en munitions, cliente de House Barca."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Howler, tireuse d'élite et experte en munitions, cliente de House Barca.
 #   links: Barca cliente

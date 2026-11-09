@@ -18,3 +18,25 @@ facts:
     value:
       fr: Élève de l'Institut, petit, sauvage et imprévisible.
       en: Institute student, small, feral and unpredictable.
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Chef des Howlers, fils de Fitchner."
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Howler."
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Howler, époux de Victra."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Imperator de la Republic, époux de Victra, Howler."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
+# gs: Chef des Howlers, fils de Fitchner.
+# ms: Howler.
+# ig: Howler, époux de Victra.
+# da: Imperator de la Republic, époux de Victra, Howler.

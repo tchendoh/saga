@@ -14,6 +14,16 @@ allegiances:
   - value: rim-dominion
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ig
+    draft: true # à réécrire
+    value:
+      fr: "Fille de Romulus et de Dido."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Fille de Romulus et de Dido, Lochagos des Eleventh Dust Walkers."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Fille de Romulus et de Dido.
 # da: Fille de Romulus et de Dido, Lochagos des Eleventh Dust Walkers.

@@ -11,5 +11,11 @@ houses:
   - value: bellona
     since: gs
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Praetor, cousin de Cassius, neveu de Tiberius."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Praetor, cousin de Cassius, neveu de Tiberius.

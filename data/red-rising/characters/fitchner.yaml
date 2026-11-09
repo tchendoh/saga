@@ -17,10 +17,20 @@ houses:
 death:
   since: da
   value:
-    fr: "Mort."
+    fr: "Tué par Cassius au Bellona"
     en: "Dead."
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: gs
+    draft: true # à réécrire
+    value:
+      fr: "Ancien Proctor de Mars, père de Sevro."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Ancien chef des Sons of Ares."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Ancien Proctor de Mars, père de Sevro.
 # da: Ancien chef des Sons of Ares.
 #   death: Tué par Cassius au Bellona

@@ -11,5 +11,11 @@ houses:
   - value: sarna
     since: ms
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Ancien de House Mars, lieutenant des Boneriders."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Ancien de House Mars, lieutenant des Boneriders.

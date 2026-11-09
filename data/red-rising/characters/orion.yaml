@@ -11,6 +11,16 @@ allegiances:
   - value: republic
     since: da
 
-# Old descriptions, for reference only. Rewrite them in your own words as facts (fr and en).
+facts:
+  - since: ms
+    draft: true # à réécrire
+    value:
+      fr: "Capitaine de vaisseau."
+  - since: da
+    draft: true # à réécrire
+    value:
+      fr: "Navarch de la Republic, Imperator de la White Fleet."
+
+# Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Capitaine de vaisseau.
 # da: Navarch de la Republic, Imperator de la White Fleet.
