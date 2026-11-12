@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "SubPraetor Lunese, ancien second officier de la garde prétorienne XIII Dracones sous Aja."
+      fr: "Gris de Luna, officier de la garde prétorienne, ancien instructeur de tir de Lysander."
+      en: "Gray from Luna, a Praetorian Guard officer and Lysander's former shooting instructor."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: SubPraetor Lunese, ancien second officier de la garde prétorienne XIII Dracones sous Aja.

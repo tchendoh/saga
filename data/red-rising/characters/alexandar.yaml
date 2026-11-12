@@ -20,9 +20,9 @@ facts:
     value:
       fr: "Petit-fils aîné de Lorn, Howler."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Petit-fils aîné de Lorn au Arcos, héritier de House Arcos, allié de House Augustus, lancier, Pup One."
+      fr: "Petit-fils aîné de Lorn au Arcos et héritier de sa maison. Lancier de Darrow."
+      en: "Eldest grandson of Lorn au Arcos and heir to his house. One of Darrow's lancers."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Petit-fils aîné de Lorn, Howler.

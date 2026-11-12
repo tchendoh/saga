@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Cheffe des agents Splinter, cliente de House Augustus."
+      fr: "Rose de Luna, à la tête des services de renseignement de Virginia."
+      en: "Pink from Luna, head of Virginia's intelligence services."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Cheffe des agents Splinter, cliente de House Augustus.

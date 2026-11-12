@@ -20,9 +20,9 @@ facts:
     value:
       fr: "Épouse de Romulus, née Dido au Saud."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Co-consul du Rim Dominion, épouse de l'ancien Sovereign Romulus au Raa, née Dido au Saud."
+      fr: "Veuve de Romulus au Raa, originaire d'une grande maison de Vénus."
+      en: "Widow of Romulus au Raa, born into a great house of Venus."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Épouse de Romulus, née Dido au Saud.

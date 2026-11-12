@@ -17,9 +17,9 @@ facts:
     value:
       fr: "Nièce de Darrow."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Nièce de Darrow, fille de Kieran, lancière, Pup Two."
+      fr: "Nièce de Darrow, fille aînée de Kieran. Pilote et lancière de Darrow."
+      en: "Darrow's niece, Kieran's eldest daughter. A pilot and one of Darrow's lancers."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Nièce de Darrow.

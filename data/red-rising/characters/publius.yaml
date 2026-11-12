@@ -17,9 +17,9 @@ facts:
     value:
       fr: "Le Copper Tribune, chef du Copper bloc."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Tribun du Copper bloc, sénateur."
+      fr: "Cuivre de Luna, avocat et sénateur qui représente les Cuivres."
+      en: "Copper from Luna, a lawyer and senator for the Coppers."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Le Copper Tribune, chef du Copper bloc.

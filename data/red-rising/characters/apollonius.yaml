@@ -20,9 +20,9 @@ facts:
     value:
       fr: "Héritier de House Valii-Rath."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Héritier de House Valii-Rath, verbeux."
+      fr: "Héritier de la maison Valii-Rath, surnommé le Minotaure, aussi bavard que dangereux."
+      en: "Heir to House Valii-Rath, known as the Minotaur, as talkative as he is dangerous."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Héritier de House Valii-Rath.

@@ -33,9 +33,9 @@ facts:
     value:
       fr: "Chef de House Raa, Sovereign du Rim Dominion."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Ancien Primus de House Raa, ancien Sovereign du Rim Dominion."
+      fr: "Ancien souverain du Dominion de la Bordure, mort en marchant vers le tombeau de ses ancêtres."
+      en: "Former Sovereign of the Rim Dominion, who died walking to his ancestors' tomb."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Chef de House Raa, ArchGovernor d'Io.

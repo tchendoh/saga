@@ -17,9 +17,9 @@ facts:
     value:
       fr: "Capitaine de vaisseau."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Navarch de la Republic, Imperator de la White Fleet."
+      fr: "Bleue de Phobos, l'une des grandes commandantes de la marine de la République."
+      en: "Blue from Phobos, one of the great commanders of the Republic Navy."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Capitaine de vaisseau.

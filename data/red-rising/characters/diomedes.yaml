@@ -23,9 +23,9 @@ facts:
     value:
       fr: "Fils de Romulus et de Dido."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Fils de Romulus et de Dido, Taxiarchos de la Lightning Phalanx."
+      fr: "Fils de Romulus et de Dido, héritier de la maison Raa. Il commande une phalange de l'armée du Dominion."
+      en: "Son of Romulus and Dido, heir to House Raa. He commands a phalanx of the Dominion's army."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Fils de Romulus et de Dido.

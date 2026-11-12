@@ -17,9 +17,9 @@ facts:
     value:
       fr: "Légionnaire, sœur de Trigg."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Dux de la Lionguard de Virginia, sœur de Trigg, cliente de House Augustus, centurionne de la Pegasus Legion."
+      fr: "Grise de la Terre, sœur aînée de Trigg, membre de la garde personnelle de Virginia."
+      en: "Gray from Earth, Trigg's older sister, a member of Virginia's personal guard."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Légionnaire, sœur de Trigg.

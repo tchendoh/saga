@@ -20,9 +20,9 @@ facts:
     value:
       fr: "Fille du Ash Lord."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Dictator de la Society, fille du Ash Lord Magnus au Grimmus, sœur d'Aja et de Moira, ancienne cliente de House Lune."
+      fr: "Fille cadette de Magnus au Grimmus, sœur d'Aja et de Moira. Elle a pris la tête de ce qui reste de la Société."
+      en: "Youngest daughter of Magnus au Grimmus, sister of Aja and Moira. She now leads what remains of the Society."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Fille du Ash Lord.

@@ -14,9 +14,9 @@ facts:
     value:
       fr: "Collègue d'Ephraim."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Mercenaire, collègue d'Ephraim."
+      fr: "Obsidienne, voleuse à gages et complice d'Ephraim."
+      en: "Obsidian thief for hire, Ephraim's partner."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Collègue d'Ephraim.

@@ -20,9 +20,9 @@ facts:
     value:
       fr: "Fille de Romulus et de Dido."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Fille de Romulus et de Dido, Lochagos des Eleventh Dust Walkers."
+      fr: "Fille de Romulus et de Dido, officier dans l'armée du Dominion."
+      en: "Daughter of Romulus and Dido, an officer in the Dominion's army."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Fille de Romulus et de Dido.

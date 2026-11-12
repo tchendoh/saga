@@ -14,9 +14,9 @@ facts:
     value:
       fr: "Une Red Gamma."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Gamma de Mars, cliente de House Telemanus."
+      fr: "Rouge de Mars, tante de Liam, ancienne réfugiée des camps."
+      en: "Red from Mars, Liam's aunt, formerly a refugee in the camps."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Une Red Gamma.

@@ -9,9 +9,9 @@ colors:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Seigneur de guerre et concubin royal de Sefi."
+      fr: "Seigneur de guerre obsidien, compagnon de la reine Sefi."
+      en: "Obsidian warlord, Queen Sefi's consort."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Seigneur de guerre et concubin royal de Sefi.

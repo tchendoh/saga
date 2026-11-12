@@ -29,9 +29,9 @@ facts:
     value:
       fr: "Sénateur de la Republic, lieutenant d'Ares."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Sénateur, ancien lieutenant des Sons of Ares, tribun du Red bloc."
+      fr: "Sénateur de la République, ancien lieutenant des Fils d'Arès, à la tête du bloc rouge au Sénat."
+      en: "Republic senator and former Sons of Ares lieutenant, leader of the Red bloc in the Senate."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Lieutenant d'Ares.

@@ -20,9 +20,9 @@ facts:
     value:
       fr: "Fille de Kavax et de Niobe."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Praetor des Free Legions, fille de Kavax et de Niobe, Howler."
+      fr: "Fille de Kavax et de Niobe, surnommée le Marteau. Commande une légion de la République et fait partie de l'équipe d'élite de Darrow."
+      en: "Daughter of Kavax and Niobe, known as the Hammer. She commands a Republic legion and is a member of Darrow's elite team."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Fille de Kavax et de Niobe.

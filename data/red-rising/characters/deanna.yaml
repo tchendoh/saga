@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Mère de Darrow."
+      fr: "Mère de Darrow, de Kieran et de Leanna."
+      en: "Mother of Darrow, Kieran and Leanna."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Mère de Darrow.

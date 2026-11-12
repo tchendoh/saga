@@ -20,9 +20,9 @@ facts:
     value:
       fr: "Lieutenante de Dancer."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Cheffe de la Red Hand, ancienne lieutenante des Sons of Ares."
+      fr: "Ancienne lieutenante des Fils d'Arès, à la tête de la Main rouge, un groupe terroriste rouge."
+      en: "Former Sons of Ares lieutenant, now leading the Red Hand, a Red terrorist group."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Lieutenante de Dancer.

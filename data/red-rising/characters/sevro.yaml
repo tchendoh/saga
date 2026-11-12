@@ -33,9 +33,9 @@ facts:
     value:
       fr: "Howler, époux de Victra."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Imperator de la Republic, époux de Victra, Howler."
+      fr: "Meilleur ami de Darrow et chef de son équipe d'élite, haut gradé de la République. Époux de Victra."
+      en: "Darrow's best friend and leader of his elite team, a high-ranking Republic officer. Husband of Victra."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Chef des Howlers, fils de Fitchner.

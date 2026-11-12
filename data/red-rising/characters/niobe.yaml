@@ -20,9 +20,9 @@ facts:
     value:
       fr: "Épouse de Kavax."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Épouse de Kavax, cliente de House Augustus."
+      fr: "Épouse de Kavax, mère de Daxo et de Thraxa."
+      en: "Wife of Kavax, mother of Daxo and Thraxa."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Épouse de Kavax.

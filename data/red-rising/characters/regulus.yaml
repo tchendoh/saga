@@ -24,9 +24,9 @@ facts:
     value:
       fr: "Homme le plus riche de la Republic."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Homme le plus riche de la Republic, à la tête de Sun Industries."
+      fr: "Surnommé Quicksilver, l'Argent le plus riche de la République et cofondateur des Fils d'Arès."
+      en: "Known as Quicksilver, the richest Silver in the Republic and co-founder of the Sons of Ares."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Homme le plus riche de la Society.

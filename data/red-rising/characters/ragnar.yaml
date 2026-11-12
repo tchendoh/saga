@@ -23,9 +23,9 @@ facts:
     value:
       fr: "Nouveau Howler."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Ancien chef des Obsidian, Howler."
+      fr: "Frère de Sefi, ancien guide des Obsidiens et ami de Darrow."
+      en: "Sefi's brother, former leader of the Obsidians and Darrow's friend."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Nouveau Howler.

@@ -17,9 +17,9 @@ facts:
     value:
       fr: "Howler."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Howler, cliente de House Barca."
+      fr: "Or de Mars, l'une des premières membres de l'équipe d'élite de Darrow, depuis l'Institut. Mariée à Clown."
+      en: "Gold from Mars, one of the original members of Darrow's elite team since the Institute. Married to Clown."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Howler.

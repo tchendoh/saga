@@ -33,9 +33,9 @@ facts:
     value:
       fr: "Sovereign régnante de la Republic, épouse de Darrow, mère de Pax."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Sovereign régnante de la Republic, épouse de Darrow, Primus de House Augustus, sœur du Jackal of Mars."
+      fr: "Souveraine de la République solaire, à la tête de la maison Augustus. Épouse de Darrow."
+      en: "Sovereign of the Solar Republic and head of House Augustus. Darrow's wife."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Fille de Nero, sœur jumelle d'Adrius.

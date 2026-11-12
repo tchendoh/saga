@@ -29,9 +29,9 @@ facts:
     value:
       fr: "Ancien Proctor de Mars, père de Sevro."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Ancien chef des Sons of Ares."
+      fr: "Ancien chef des Fils d'Arès, père de Sevro."
+      en: "Former leader of the Sons of Ares, Sevro's father."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Ancien Proctor de Mars, père de Sevro.

@@ -46,9 +46,9 @@ facts:
     value:
       fr: "ArchImperator de la Republic, époux de Virginia."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Ancien ArchImperator de la Republic, époux de Virginia."
+      fr: "Ancien commandant suprême des armées de la République, destitué par le Sénat. Époux de Virginia."
+      en: "Former supreme commander of the Republic's forces, stripped of his rank by the Senate. Husband of Virginia."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: ArchPrimus de l'Institute of Mars, lancier de House Augustus.

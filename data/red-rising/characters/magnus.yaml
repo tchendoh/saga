@@ -33,9 +33,9 @@ facts:
     value:
       fr: "Ancien ArchImperator d'Octavia."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Ancien ArchImperator d'Octavia au Lune, l'incendiaire de Rhea."
+      fr: "Surnommé le Seigneur de la Cendre, ancien commandant des armées d'Octavia, qui a fait brûler Rhea."
+      en: "Known as the Ash Lord, former commander of Octavia's armies, who burned Rhea."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: ArchImperator de la Sovereign, père d'Aja.

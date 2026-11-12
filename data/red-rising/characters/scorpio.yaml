@@ -15,9 +15,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Primus de House Votum, magnats des mines de métaux et bâtisseurs de Mercury."
+      fr: "Chef de la maison Votum et gouverneur de Mercure. Sa famille exploite les mines de métaux et bâtit les cités de la planète."
+      en: "Head of House Votum and governor of Mercury. His family runs the metal mines and builds the planet's cities."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Primus de House Votum, magnats des mines de métaux et bâtisseurs de Mercury.

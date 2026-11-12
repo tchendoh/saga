@@ -26,9 +26,9 @@ facts:
     value:
       fr: "Politico en chef de la Sovereign."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Fille du Ash Lord Magnus au Grimmus."
+      fr: "Fille de Magnus au Grimmus, sœur d'Aja et d'Atalantia, ancienne conseillère politique d'Octavia."
+      en: "Daughter of Magnus au Grimmus, sister of Aja and Atalantia, formerly Octavia's chief political adviser."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Politico en chef de la Sovereign.

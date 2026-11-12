@@ -22,9 +22,9 @@ facts:
     value:
       fr: "Reine des Valkyrie, sœur de Ragnar."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Reine des Obsidian, cheffe des Valkyrie, sœur de Ragnar Volarus."
+      fr: "Reine des Obsidiens, surnommée la Silencieuse, sœur de Ragnar."
+      en: "Queen of the Obsidians, known as the Quiet, Ragnar's sister."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ms: Cheffe de guerre des Valkyrie, fille d'Alia, sœur de Ragnar.

@@ -14,9 +14,9 @@ facts:
     value:
       fr: "Mercenaire, ancien membre des Sons of Ares."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Mercenaire, ancien membre des Sons of Ares, époux de Trigg ti Nakamura."
+      fr: "Ancien membre des Fils d'Arès devenu voleur à gages, veuf de Trigg ti Nakamura."
+      en: "Former Sons of Ares member turned thief for hire, widower of Trigg ti Nakamura."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # ig: Mercenaire, ancien membre des Sons of Ares.

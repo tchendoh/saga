@@ -29,9 +29,9 @@ facts:
     value:
       fr: "Garde du corps en chef de la Sovereign."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Fille du Ash Lord Magnus au Grimmus."
+      fr: "Fille aînée de Magnus au Grimmus, chevalier protéen de la Société et garde du corps d'Octavia au Lune."
+      en: "Eldest daughter of Magnus au Grimmus, Protean Knight of the Society and Octavia au Lune's bodyguard."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Garde du corps en chef de la Sovereign.

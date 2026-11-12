@@ -26,9 +26,9 @@ facts:
     value:
       fr: "Sovereign régnante de la Society."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Ancienne Sovereign de la Society, grand-mère de Lysander."
+      fr: "Ancienne souveraine de la Société, grand-mère de Lysander."
+      en: "Former Sovereign of the Society, Lysander's grandmother."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Sovereign régnante de la Society.

@@ -24,9 +24,9 @@ facts:
     value:
       fr: "Petit-fils de l'ancienne Sovereign Octavia, héritier de House Lune."
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Petit-fils de l'ancienne Sovereign Octavia, héritier de House Lune, ancien patron de House Grimmus."
+      fr: "Petit-fils d'Octavia au Lune et héritier de sa maison. Il part comme émissaire du Dominion auprès de la Société."
+      en: "Grandson of Octavia au Lune and heir to her house. He travels as the Dominion's envoy to the Society."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # gs: Petit-fils d'Octavia, héritier de House Lune.
