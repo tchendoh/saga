@@ -15,9 +15,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Garde du corps de Darrow, client de House Augustus."
+      fr: "Or au service de la maison Augustus, membre de la garde rapprochée de Darrow."
+      en: "Gold sworn to House Augustus, one of Darrow's personal bodyguards."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Garde du corps de Darrow, client de House Augustus.

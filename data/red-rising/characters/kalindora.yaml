@@ -18,9 +18,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Olympic Knight, tante d'Alexandar au Arcos, cliente de House Grimmus."
+      fr: "Chevalier olympien de la Société, surnommée le Chevalier de l'Amour. Tante d'Alexandar au Arcos."
+      en: "Olympic Knight of the Society, known as the Love Knight. Aunt of Alexandar au Arcos."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Olympic Knight, tante d'Alexandar au Arcos, cliente de House Grimmus.

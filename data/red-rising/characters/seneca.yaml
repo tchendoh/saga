@@ -15,9 +15,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Dux d'Ajax, centurion des Iron Leopards."
+      fr: "Officier de la Société, bras droit d'Ajax au sein de sa légion."
+      en: "Society officer, Ajax's second-in-command in his legion."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Dux d'Ajax, centurion des Iron Leopards.

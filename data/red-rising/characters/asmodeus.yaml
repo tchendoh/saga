@@ -15,9 +15,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Primus de House Carthii, constructeurs de vaisseaux de Venus."
+      fr: "Chef de la maison Carthii, famille de Vénus qui construit les vaisseaux de guerre."
+      en: "Head of House Carthii, the Venusian family that builds warships."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Primus de House Carthii, constructeurs de vaisseaux de Venus.

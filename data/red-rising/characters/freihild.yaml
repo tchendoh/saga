@@ -9,9 +9,9 @@ colors:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Guerrière spirituelle Skuggi."
+      fr: "Cheffe des Skuggi, les assassins personnels de la reine Sefi."
+      en: "Leader of the Skuggi, Queen Sefi's personal assassins."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Guerrière spirituelle Skuggi.

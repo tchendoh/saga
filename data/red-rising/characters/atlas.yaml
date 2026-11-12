@@ -18,9 +18,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Frère de Romulus au Raa, Legate de la Zero Legion (les Gorgons), ancien pupille de House Lune, client de House Grimmus."
+      fr: "Chevalier de la Peur de la Société, frère cadet de Romulus au Raa. Il mène une guérilla sur Mercure."
+      en: "Fear Knight of the Society and younger brother of Romulus au Raa. He leads a guerrilla campaign on Mercury."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Frère de Romulus au Raa, Legate de la Zero Legion (les Gorgons), ancien pupille de House Lune, client de House Grimmus.

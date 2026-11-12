@@ -9,9 +9,9 @@ colors:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Conseiller de Sefi, un logos."
+      fr: "Blanc de Luna, conseiller de la reine Sefi."
+      en: "White from Luna, adviser to Queen Sefi."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Conseiller de Sefi, un logos.

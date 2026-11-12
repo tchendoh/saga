@@ -18,9 +18,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Fils d'Aja au Grimmus et d'Atlas au Raa, héritier de House Grimmus, Legate des Iron Leopards."
+      fr: "Fils d'Aja au Grimmus et héritier de sa maison. Chevalier de la Tempête de la Société, il commande une légion."
+      en: "Son of Aja au Grimmus and heir to her house. Storm Knight of the Society, he commands a legion."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Fils d'Aja au Grimmus et d'Atlas au Raa, héritier de House Grimmus, Legate des Iron Leopards.

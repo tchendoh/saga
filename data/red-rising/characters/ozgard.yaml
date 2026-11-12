@@ -9,9 +9,9 @@ colors:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Chaman des Firebones."
+      fr: "Chaman venu du pôle Nord de Mars, conseiller spirituel de la reine Sefi."
+      en: "Shaman from Mars's north pole and spiritual adviser to Queen Sefi."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Chaman des Firebones.

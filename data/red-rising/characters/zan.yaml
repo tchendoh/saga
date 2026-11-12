@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "ArchImperator de la Republic après la destitution de Darrow, commandante de la flotte de défense de Luna."
+      fr: "Bleue de Luna, à la tête de la flotte qui défend la lune."
+      en: "Blue from Luna, in command of the fleet that defends the moon."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: ArchImperator de la Republic après la destitution de Darrow, commandante de la flotte de défense de Luna.

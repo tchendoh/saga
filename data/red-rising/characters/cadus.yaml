@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Imperator de la Republic, commandant en second des Free Legions."
+      fr: "Orange venu de la Terre, l'un des plus hauts officiers de l'armée de la République."
+      en: "Orange from Earth, one of the highest-ranking officers of the Republic's army."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Imperator de la Republic, commandant en second des Free Legions.
