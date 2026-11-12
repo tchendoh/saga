@@ -9,9 +9,9 @@ colors:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Agent du Syndicate, maître voleur."
+      fr: "Rose de Luna, lieutenant haut placé du Syndicat, le réseau criminel de la lune."
+      en: "Pink from Luna, a high-ranking lieutenant of the Syndicate, the moon's criminal network."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Agent du Syndicate, maître voleur.

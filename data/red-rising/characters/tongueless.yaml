@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Ancien prisonnier de Deepgrave."
+      fr: "Obsidien privé de sa langue, ancien prisonnier de Deepgrave libéré par l'équipe de Darrow."
+      en: "Obsidian whose tongue was cut out, a former Deepgrave prisoner freed by Darrow's team."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Ancien prisonnier de Deepgrave.

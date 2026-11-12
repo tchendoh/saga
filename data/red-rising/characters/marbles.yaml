@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Howler, pirate informatique."
+      fr: "Vert, pirate informatique de la République. Fait partie de l'équipe d'élite de Darrow."
+      en: "Green hacker for the Republic and a member of Darrow's elite team."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Howler, pirate informatique.

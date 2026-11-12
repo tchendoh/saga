@@ -9,9 +9,9 @@ colors:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Mercenaire."
+      fr: "Brune qui travaille à son compte comme mercenaire, sous un nom de code."
+      en: "Brown who works freelance as a mercenary, under a code name."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Mercenaire.

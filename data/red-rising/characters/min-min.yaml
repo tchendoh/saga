@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Howler, tireuse d'élite et experte en munitions, cliente de House Barca."
+      fr: "Rouge spécialiste des explosifs dans l'armée de la République. Fait partie de l'équipe d'élite de Darrow."
+      en: "Red explosives expert in the Republic's army and a member of Darrow's elite team."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Howler, tireuse d'élite et experte en munitions, cliente de House Barca.

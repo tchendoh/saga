@@ -9,9 +9,9 @@ colors:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Neveu de Lyria, client de House Telemanus."
+      fr: "Jeune Rouge de Mars, neveu de Lyria."
+      en: "Young Red from Mars, Lyria's nephew."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Neveu de Lyria, client de House Telemanus.
