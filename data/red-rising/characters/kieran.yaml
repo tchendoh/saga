@@ -1,12 +1,11 @@
 id: kieran
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: da
+introduced: rr
 names:
   - value: "Kieran of Lykos"
-    since: da
+    since: rr
 colors:
   - value: red
-    since: da
+    since: rr
 allegiances:
   - value: republic
     since: da

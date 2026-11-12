@@ -1,12 +1,11 @@
 id: duke-of-hands
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: da
+introduced: ig
 names:
   - value: "The Duke of Hands"
-    since: da
+    since: ig
 colors:
   - value: pink
-    since: da
+    since: ig
 
 facts:
   - since: da

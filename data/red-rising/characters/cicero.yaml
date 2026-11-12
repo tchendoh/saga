@@ -1,12 +1,11 @@
 id: cicero
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: da
+introduced: ms
 names:
   - value: "Cicero au Votum"
-    since: da
+    since: ms
 colors:
   - value: gold
-    since: da
+    since: ms
 houses:
   - value: votum
     since: da

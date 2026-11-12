@@ -1,12 +1,11 @@
 id: theodora
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: da
+introduced: gs
 names:
   - value: "Theodora"
-    since: da
+    since: gs
 colors:
   - value: pink
-    since: da
+    since: gs
 allegiances:
   - value: republic
     since: da

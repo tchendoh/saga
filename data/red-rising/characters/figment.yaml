@@ -1,12 +1,11 @@
 id: figment
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: da
+introduced: ig
 names:
   - value: "Figment"
-    since: da
+    since: ig
 colors:
   - value: brown
-    since: da
+    since: ig
 
 facts:
   - since: da

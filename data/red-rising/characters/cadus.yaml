@@ -1,12 +1,11 @@
 id: cadus
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: da
+introduced: ms
 names:
   - value: "Cadus Harnassus"
-    since: da
+    since: ms
 colors:
   - value: orange
-    since: da
+    since: ms
 allegiances:
   - value: republic
     since: da
