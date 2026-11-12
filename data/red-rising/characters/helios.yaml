@@ -15,9 +15,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Co-consul du Rim Dominion, avec Dido."
+      fr: "Or de Callisto, chevalier de la Vérité du Dominion de la Bordure."
+      en: "Gold from Callisto, Truth Knight of the Rim Dominion."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Co-consul du Rim Dominion, avec Dido.

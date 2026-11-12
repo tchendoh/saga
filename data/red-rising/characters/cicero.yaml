@@ -15,9 +15,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Héritier de House Votum, fils de Scorpio, Legate de la Scorpion Legion."
+      fr: "Fils aîné de Scorpio au Votum et héritier de cette grande maison de Mercure."
+      en: "Eldest son of Scorpio au Votum and heir to the great Mercurian house."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Héritier de House Votum, fils de Scorpio, Legate de la Scorpion Legion.

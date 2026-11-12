@@ -15,9 +15,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Mère de Cassius, dont elle est éloignée, ennemie de Darrow, Primus de ce qui reste de House Bellona."
+      fr: "Mère de Cassius et de Karnus, à la tête de la maison Bellona. Ennemie jurée de Darrow."
+      en: "Mother of Cassius and Karnus, head of House Bellona. Darrow's sworn enemy."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Mère de Cassius, dont elle est éloignée, ennemie de Darrow, Primus de ce qui reste de House Bellona.

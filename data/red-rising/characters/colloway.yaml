@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Pilote, as en titre de la marine de la Republic, Howler."
+      fr: "Pilote de la marine de la République, ancien pirate devenu héros de guerre et adulé du public. Fait partie de l'équipe d'élite de Darrow."
+      en: "Republic Navy pilot, a former pirate turned war hero and a public darling. Member of Darrow's elite team."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Pilote, as en titre de la marine de la Republic, Howler.

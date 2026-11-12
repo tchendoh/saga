@@ -12,9 +12,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Frère de Darrow, Howler."
+      fr: "Frère aîné de Darrow. Fait partie de son équipe d'élite."
+      en: "Darrow's older brother and a member of his elite team."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Frère de Darrow, Howler.

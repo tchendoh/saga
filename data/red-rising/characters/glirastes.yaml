@@ -15,9 +15,9 @@ allegiances:
 
 facts:
   - since: da
-    draft: true # à réécrire
     value:
-      fr: "Architecte et inventeur."
+      fr: "Orange de Mercure, l'architecte et inventeur le plus célèbre de la Société. Il s'est rallié à la République contre une promesse de Darrow."
+      en: "Orange from Mercury, the Society's most famous architect and inventor. He joined the Republic in exchange for a promise from Darrow."
 
 # Old descriptions (now draft facts above, to rewrite in your own words in fr and en).
 # da: Architecte et inventeur.
