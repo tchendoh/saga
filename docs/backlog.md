@@ -2,7 +2,8 @@
 
 ## Technique
 
-- **Convertir le YAML en JSON au build.** Le navigateur reçoit aujourd'hui les fichiers YAML bruts, la bibliothèque `yaml` et Zod, d'où un fichier JavaScript de plus de 500 Ko (avertissement de Vite). Valider et convertir les données au moment du build, pour n'envoyer que du JSON déjà vérifié. À faire avant la PWA.
+- **Alléger Zod dans le navigateur.** Les données arrivent déjà validées en JSON (`npm run data`), mais Zod reste dans le bundle (380 Ko) parce que `settings.ts` valide les réglages lus dans `localStorage`. Options : garder tel quel, passer à `zod/mini`, ou valider les réglages à la main.
+- **Déplacer `yaml` dans `devDependencies`** : il ne sert plus qu'au script de build.
 - **PWA** : installable sur l'écran d'accueil de l'iPhone et utilisable hors ligne (`vite-plugin-pwa`). Les icônes sont prêtes. Nécessite le HTTPS sur saga.chummey.com.
 
 ## Données Red Rising
