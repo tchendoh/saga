@@ -1,6 +1,6 @@
 import { parse } from "yaml";
-import { Character, Series } from "./schema";
-import { checkCharacter } from "./validate";
+import { Character, Series } from "./schema.ts";
+import { checkCharacter } from "./validate.ts";
 
 export type LoadedSeries = { series: Series; characters: Character[] };
 

@@ -1,5 +1,5 @@
-import type { Edition, EditionText, Series } from "./schema";
-import { bookIndex } from "./position";
+import type { Edition, EditionText, Series } from "./schema.ts";
+import { bookIndex } from "./position.ts";
 
 /** Picks the value for the reader's edition. */
 export function inEdition(text: EditionText, edition: Edition): string {

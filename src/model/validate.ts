@@ -1,6 +1,6 @@
-import { bookIndex } from "./position";
-import type { Character, Language, Series } from "./schema";
-import { termIds } from "./text";
+import { bookIndex } from "./position.ts";
+import type { Character, Language, Series } from "./schema.ts";
+import { termIds } from "./text.ts";
 
 /**
  * Spoiler-safety rules that Zod alone cannot express, because they need the series.

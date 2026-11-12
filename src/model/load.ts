@@ -1,4 +1,4 @@
-import { validateAll, type LoadedSeries } from "./validateAll";
+import { validateAll, type LoadedSeries } from "./validateAll.ts";
 
 export type { LoadedSeries };
 

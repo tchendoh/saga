@@ -1,6 +1,6 @@
-import { bookIndex, isVisible, type Position } from "./position";
-import type { Character, Edition, EditionText, Gender, Language, RelationType, Role, Series } from "./schema";
-import { inEdition, resolveTerms } from "./text";
+import { bookIndex, isVisible, type Position } from "./position.ts";
+import type { Character, Edition, EditionText, Gender, Language, RelationType, Role, Series } from "./schema.ts";
+import { inEdition, resolveTerms } from "./text.ts";
 
 /** What the reader is allowed to see of a character, resolved for one edition and language. */
 export type CharacterView = {
