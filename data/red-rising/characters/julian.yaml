@@ -1,0 +1,25 @@
+id: julian
+introduced: rr
+names:
+  - value: "Julian au Bellona"
+    since: rr
+colors:
+  - value: gold
+    since: rr
+gender: m
+houses:
+  - value: bellona
+    since: rr
+relations:
+  - value: { type: sibling, target: cassius }
+    since: rr
+facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut, frère de Cassius. Chaleureux et sociable, il accueille volontiers les autres.
+      en: Institute student, Cassius's brother. Warm and sociable, he readily welcomes others.
+death:
+  since: gs
+  value:
+    fr: Mort lors de l'épreuve d'entrée à l'Institut.
+    en: Died during the Institute's entrance trial.

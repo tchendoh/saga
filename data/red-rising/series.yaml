@@ -45,6 +45,7 @@ houses:
   - { id: faran, name: Faran }
   - { id: grimmus, name: Grimmus }
   - { id: julii, name: Julii }
+  - { id: ladros, name: Ladros }
   - { id: lune, name: Lune }
   - { id: lux, name: Lux }
   - { id: raa, name: Raa }

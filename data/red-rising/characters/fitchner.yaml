@@ -1,18 +1,17 @@
 id: fitchner
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: gs
+introduced: rr
 names:
   - value: "Fitchner au Barca"
-    since: gs
+    since: rr
 aliases:
   - value: "Ares"
     since: da
 colors:
   - value: gold
-    since: gs
+    since: rr
 houses:
   - value: barca
-    since: gs
+    since: rr
 # TODO: this death is probably revealed in an earlier book; move "since" to the book after the one where it happens.
 death:
   since: da
@@ -21,6 +20,10 @@ death:
     en: "Dead."
 
 facts:
+  - since: rr
+    value:
+      fr: Proctor de l'Institut. Bourru et moqueur, il encadre les nouvelles recrues.
+      en: Institute Proctor. Gruff and mocking, he oversees the new recruits.
   - since: gs
     draft: true # à réécrire
     value:

@@ -1,0 +1,14 @@
+id: quinn
+introduced: rr
+names:
+  - value: "Quinn"
+    since: rr
+colors:
+  - value: gold
+    since: rr
+gender: f
+facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut appréciée de ses camarades, sociable et pleine d'assurance.
+      en: Institute student well liked by her peers, sociable and self-assured.

@@ -1,8 +1,10 @@
 id: sevro
 introduced: rr
 names:
-  - value: Sevro au Barca
+  - value: Sevro
     since: rr
+  - value: Sevro au Barca
+    since: gs
 aliases:
   - value: Goblin
     since: rr
@@ -12,7 +14,7 @@ colors:
 gender: m
 houses:
   - value: barca
-    since: rr
+    since: gs
 facts:
   - since: rr
     value:

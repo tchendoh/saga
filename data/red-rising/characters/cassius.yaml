@@ -14,6 +14,10 @@ houses:
     since: rr
 
 facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut issu d'une puissante famille. Charismatique et sûr de lui, frère de Julian.
+      en: Institute student from a powerful family. Charismatic and confident, Julian's brother.
   - since: gs
     draft: true # à réécrire
     value:

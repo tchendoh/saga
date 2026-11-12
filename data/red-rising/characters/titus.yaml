@@ -1,0 +1,22 @@
+id: titus
+introduced: rr
+names:
+  - value: "Titus au Ladros"
+    since: rr
+colors:
+  - value: gold
+    since: rr
+gender: m
+houses:
+  - value: ladros
+    since: rr
+facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut, brutal et autoritaire, qui s'impose par la force.
+      en: Institute student, brutal and domineering, who rules by force.
+death:
+  since: gs
+  value:
+    fr: Mort à l'Institut.
+    en: Died at the Institute.

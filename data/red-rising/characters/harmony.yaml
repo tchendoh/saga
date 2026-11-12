@@ -11,6 +11,10 @@ allegiances:
     since: gs
 
 facts:
+  - since: rr
+    value:
+      fr: Rouge au visage marqué d'une grave brulure, directe et dure dans ses manières.
+      en: A Red whose face bears a severe burn scar, blunt and hard in her ways.
   - since: gs
     draft: true # à réécrire
     value:

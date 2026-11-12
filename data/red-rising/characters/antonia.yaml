@@ -1,17 +1,22 @@
 id: antonia
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: gs
+introduced: rr
 names:
+  - value: "Antonia au Severus"
+    since: rr
   - value: "Antonia au Severus-Julii"
     since: gs
 colors:
   - value: gold
-    since: gs
+    since: rr
 houses:
   - value: severus-julii
     since: gs
 
 facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut, ambitieuse et compétitive, qui sait user de son charme pour arriver à ses fins.
+      en: Institute student, ambitious and competitive, who knows how to use her charm to get her way.
   - since: gs
     draft: true # à réécrire
     value:
