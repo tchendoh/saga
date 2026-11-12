@@ -51,6 +51,11 @@ export const Series = z.object({
   houses: z.array(z.object({ id: z.string(), name: EditionText })).default([]),
   /** Factions and allegiances, e.g. Sons of Ares. */
   allegiances: z.array(z.object({ id: z.string(), name: EditionText })).default([]),
+  /**
+   * Universe vocabulary that differs between editions (e.g. Howlers), referenced
+   * from descriptions with a {term:id} marker and replaced for the reader's edition.
+   */
+  terms: z.array(z.object({ id: z.string().regex(/^[a-z0-9-]+$/), name: EditionText })).default([]),
 });
 export type Series = z.infer<typeof Series>;
 

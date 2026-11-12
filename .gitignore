@@ -71,3 +71,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+### Saga ###
+# Données générées par npm run data
+src/generated

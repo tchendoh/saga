@@ -13,6 +13,7 @@ const series: Series = {
   colors: [{ id: "red", name: "Red", hex: "#e5534b" }],
   houses: [],
   allegiances: [],
+  terms: [{ id: "howlers", name: "Howlers" }],
 };
 
 const valid = {
@@ -27,6 +28,21 @@ const check = (overrides: object) => checkCharacter(series, Character.parse({ ..
 describe("checkCharacter", () => {
   it("accepts a valid character", () => {
     expect(check({})).toEqual([]);
+  });
+
+  it("accepts a fact that uses a known term", () => {
+    expect(check({ facts: [{ since: "one", value: { fr: "Un des {term:howlers}.", en: "One of the {term:howlers}." } }] })).toEqual([]);
+  });
+
+  it("rejects a fact or death that uses an unknown term", () => {
+    const problems = check({
+      facts: [{ since: "one", value: { fr: "{term:nope}", en: "x" } }],
+      death: { since: "two", value: { fr: "x", en: "{term:gone}" } },
+    });
+    expect(problems).toEqual([
+      expect.stringMatching(/facts\[0\]\.fr uses unknown term "nope"/),
+      expect.stringMatching(/death\.en uses unknown term "gone"/),
+    ]);
   });
 
   it("rejects a fact revealed before the character is introduced", () => {

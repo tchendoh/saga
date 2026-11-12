@@ -16,6 +16,10 @@ allegiances:
     since: da
 
 facts:
+  - since: rr
+    value:
+      fr: Rouge calme et réfléchi, qui s'intéresse de près à Darrow.
+      en: A calm, thoughtful Red who takes a close interest in Darrow.
   - since: gs
     draft: true # à réécrire
     value:

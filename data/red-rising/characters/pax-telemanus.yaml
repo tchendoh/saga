@@ -1,0 +1,17 @@
+id: pax-telemanus
+introduced: rr
+names:
+  - value: "Pax au Telemanus"
+    since: rr
+colors:
+  - value: gold
+    since: rr
+gender: m
+houses:
+  - value: telemanus
+    since: rr
+facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut d'une stature colossale. Impressionnant au combat, il a pourtant un tempérament chaleureux.
+      en: Institute student of colossal size. Formidable in a fight, yet warm-hearted.

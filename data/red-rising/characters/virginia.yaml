@@ -1,22 +1,25 @@
 id: virginia
 introduced: rr
 names:
-  - value: "Virginia au Augustus"
-    since: rr
-aliases:
   - value: "Mustang"
+    since: rr
+  - value: "Virginia au Augustus"
     since: gs
 colors:
   - value: gold
     since: rr
 houses:
   - value: augustus
-    since: rr
+    since: gs
 allegiances:
   - value: republic
     since: da
 
 facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut, vive, indépendante et sûre d'elle. Elle se distingue vite par son habileté.
+      en: Institute student, quick-witted, independent and self-assured. She soon stands out for her skill.
   - since: gs
     draft: true # à réécrire
     value:

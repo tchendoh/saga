@@ -4,14 +4,14 @@ import { HelpPage } from "./components/HelpPage";
 import { Hint } from "./components/Hint";
 import { SettingsPage } from "./components/SettingsPage";
 import { STRINGS } from "./i18n";
-import { loadAll } from "./model/load";
+import { allSeries } from "./model/data";
 import { effectivePosition } from "./model/position";
 import { bookNumber, inEdition } from "./model/text";
 import { compareViews, groupViews, hasNewInfo, search, viewCharacter, type CharacterView, type GroupBy } from "./model/view";
 import { markHintSeen, markKnown, seriesProgress, toggleFavorite, unmarkKnown, type SeriesSettings } from "./settings/settings";
 import { useSettings } from "./settings/useSettings";
 
-const [{ series, characters }] = loadAll();
+const [{ series, characters }] = allSeries;
 const byId = new Map(characters.map((c) => [c.id, c]));
 const bookIndexOf = (id: string) => series.books.findIndex((b) => b.id === id);
 const isTouch = typeof matchMedia !== "undefined" && matchMedia("(pointer: coarse)").matches;

@@ -1,19 +1,22 @@
 id: adrius
 introduced: rr
 names:
-  - value: "Adrius au Augustus"
+  - value: { en: The Jackal, fr: le Chacal }
     since: rr
-aliases:
-  - value: "The Jackal"
+  - value: "Adrius au Augustus"
     since: gs
 colors:
   - value: gold
     since: rr
 houses:
   - value: augustus
-    since: rr
+    since: gs
 
 facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut qu'on connait d'abord par sa réputation inquiétante et ses tactiques redoutables.
+      en: Institute student known at first only by his unsettling reputation and ruthless tactics.
   - since: gs
     draft: true # à réécrire
     value:

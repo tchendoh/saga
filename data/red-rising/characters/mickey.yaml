@@ -1,17 +1,20 @@
 id: mickey
-# TODO: present in Red Rising (book 1)? If so, set introduced to rr and move the first entries to rr.
-introduced: gs
+introduced: rr
 names:
   - value: "Mickey"
-    since: gs
+    since: rr
 colors:
   - value: violet
-    since: gs
+    since: rr
 allegiances:
   - value: sons-of-ares
     since: gs
 
 facts:
+  - since: rr
+    value:
+      fr: Violet exubérant, « sculpteur » de chair qui considère ses transformations physiques comme un art.
+      en: Flamboyant Violet, a flesh "carver" who treats his physical transformations as art.
   - since: gs
     draft: true # à réécrire
     value:

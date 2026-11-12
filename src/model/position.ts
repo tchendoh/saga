@@ -1,4 +1,4 @@
-import type { Series } from "./schema";
+import type { Series } from "./schema.ts";
 
 /**
  * Reading position as an index in the series' book list.

@@ -11,6 +11,10 @@ houses:
     since: rr
 
 facts:
+  - since: rr
+    value:
+      fr: Élève de l'Institut, réfléchi et cultivé, amateur de poésie et de belles formules.
+      en: Institute student, thoughtful and well-read, fond of poetry and a well-turned phrase.
   - since: gs
     draft: true # à réécrire
     value:

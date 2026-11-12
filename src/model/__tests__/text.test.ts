@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Series } from "../schema";
-import { bookLabel, bookNumber, inEdition } from "../text";
+import { bookLabel, bookNumber, inEdition, resolveTerms, termIds } from "../text";
 
 const series: Series = {
   id: "test",
@@ -13,6 +13,10 @@ const series: Series = {
   colors: [],
   houses: [],
   allegiances: [],
+  terms: [
+    { id: "howlers", name: { en: "Howlers", fr: "Hurleurs" } },
+    { id: "institute", name: "Institute" },
+  ],
 };
 
 describe("inEdition", () => {
@@ -32,5 +36,22 @@ describe("bookNumber and bookLabel", () => {
   it("prefixes the title with its number in the chosen edition", () => {
     expect(bookLabel(series, "two", "en")).toBe("2. Two");
     expect(bookLabel(series, "two", "fr")).toBe("2. Deux");
+  });
+});
+
+describe("term markers", () => {
+  it("lists the term ids in a text", () => {
+    expect(termIds("Chef des {term:howlers} à l'{term:institute}.")).toEqual(["howlers", "institute"]);
+    expect(termIds("Aucun marqueur.")).toEqual([]);
+  });
+  it("replaces markers with the term in the reader's edition", () => {
+    expect(resolveTerms("Chef des {term:howlers}.", series, "fr")).toBe("Chef des Hurleurs.");
+    expect(resolveTerms("Chef des {term:howlers}.", series, "en")).toBe("Chef des Howlers.");
+  });
+  it("uses a plain-string term in every edition", () => {
+    expect(resolveTerms("{term:institute}", series, "fr")).toBe("Institute");
+  });
+  it("leaves an unknown marker untouched", () => {
+    expect(resolveTerms("{term:nope}", series, "fr")).toBe("{term:nope}");
   });
 });

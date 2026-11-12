@@ -1,5 +1,6 @@
-import { bookIndex } from "./position";
-import type { Character, Series } from "./schema";
+import { bookIndex } from "./position.ts";
+import type { Character, Language, Series } from "./schema.ts";
+import { termIds } from "./text.ts";
 
 /**
  * Spoiler-safety rules that Zod alone cannot express, because they need the series.
@@ -75,6 +76,20 @@ export function checkCharacter(series: Series, character: Character, all: Charac
       problems.push(`${where}: relations[${i}] is revealed before "${target.id}" is introduced`);
     }
   });
+
+  // Every {term:id} marker in a description must point to a term defined in the series.
+  const termSet = new Set(series.terms.map((term) => term.id));
+  const texts: { field: string; value: Partial<Record<Language, string>> }[] = [
+    ...character.facts.map((fact, i) => ({ field: `facts[${i}]`, value: fact.value })),
+    ...(character.death ? [{ field: "death", value: character.death.value }] : []),
+  ];
+  for (const { field, value } of texts) {
+    for (const [language, text] of Object.entries(value)) {
+      for (const id of termIds(text ?? "")) {
+        if (!termSet.has(id)) problems.push(`${where}: ${field}.${language} uses unknown term "${id}"`);
+      }
+    }
+  }
 
   if (character.death) {
     const since = index(character.death.since, "death.since");
