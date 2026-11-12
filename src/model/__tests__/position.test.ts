@@ -14,6 +14,7 @@ const series: Series = {
   colors: [],
   houses: [],
   allegiances: [],
+  terms: [],
 };
 
 describe("effectivePosition", () => {

@@ -64,3 +64,7 @@ allegiances:
   - { id: society, name: { en: The Society, fr: La Société } }
   - { id: republic, name: { en: The Solar Republic, fr: La République solaire } }
   - { id: rim-dominion, name: { en: The Rim Dominion, fr: Le Dominion de la Bordure } }
+terms:
+  # Vocabulaire de l'univers utilisé dans les descriptions avec {term:id}. Voir docs/data.md.
+  # TODO: verify French-edition names before adding entries.
+  []

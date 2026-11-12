@@ -16,6 +16,7 @@ const series: Series = {
   ],
   houses: [],
   allegiances: [],
+  terms: [],
 };
 
 const hero = Character.parse({
@@ -147,5 +148,28 @@ describe("draft facts", () => {
 
   it("rejects a non-draft fact in one language only", () => {
     expect(() => Character.parse({ ...drafted, facts: [{ since: "one", value: { fr: "x" } }] })).toThrow();
+  });
+});
+
+describe("term markers in descriptions", () => {
+  const withTerms: Series = { ...series, terms: [{ id: "howlers", name: { en: "Howlers", fr: "Hurleurs" } }] };
+  const howler = Character.parse({
+    id: "howler",
+    introduced: "one",
+    names: [{ value: "Howler", since: "one" }],
+    colors: [{ value: "gold", since: "one" }],
+    facts: [{ since: "one", value: { fr: "Membre des {term:howlers}.", en: "Member of the {term:howlers}." } }],
+    death: { since: "two", value: { fr: "Tombé avec les {term:howlers}.", en: "Fell with the {term:howlers}." } },
+  });
+
+  it("uses the description language with the terms of the reader's edition", () => {
+    // Interface en français, lecture de l'édition anglaise.
+    const view = viewCharacter(withTerms, howler, 1, "en", "fr")!;
+    expect(view.facts).toEqual(["Membre des Howlers."]);
+    expect(view.death).toBe("Tombé avec les Howlers.");
+  });
+
+  it("uses the French term for the French edition", () => {
+    expect(viewCharacter(withTerms, howler, 0, "fr", "fr")!.facts).toEqual(["Membre des Hurleurs."]);
   });
 });

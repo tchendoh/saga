@@ -1,6 +1,6 @@
 import { bookIndex, isVisible, type Position } from "./position";
 import type { Character, Edition, EditionText, Gender, Language, RelationType, Role, Series } from "./schema";
-import { inEdition } from "./text";
+import { inEdition, resolveTerms } from "./text";
 
 /** What the reader is allowed to see of a character, resolved for one edition and language. */
 export type CharacterView = {
@@ -60,7 +60,7 @@ export function viewCharacter(
   const aliases = visible(character.aliases);
   const colorId = visible(character.colors).at(-1)!.value;
   const color = series.colors.find((c) => c.id === colorId)!;
-  const death = character.death && isVisible(series, character.death.since, position) ? character.death.value[language] : undefined;
+  const death = character.death && isVisible(series, character.death.since, position) ? resolveTerms(character.death.value[language], series, edition) : undefined;
 
   const latest = <T>(entries: Dated<T>[]) => visible(entries).at(-1)?.value;
   const nameOf = (id: string, list: { id: string; name: EditionText }[]) => {
@@ -91,7 +91,7 @@ export function viewCharacter(
     aliases: aliases.map((alias) => inEdition(alias.value, edition)),
     color: { id: color.id, name: inEdition(color.name, edition), hex: color.hex, particle: color.particle && inEdition(color.particle, edition) },
     roles: [...new Set(visible(character.roles).map((r) => r.value))],
-    facts: visibleFacts(visible(character.facts)).map((fact) => fact.value[language] ?? fact.value.fr ?? fact.value.en ?? ""),
+    facts: visibleFacts(visible(character.facts)).map((fact) => resolveTerms(fact.value[language] ?? fact.value.fr ?? fact.value.en ?? "", series, edition)),
     death,
     searchKeys: [...names, ...aliases].flatMap((entry) => allEditions(entry.value)).map(normalize),
   };
